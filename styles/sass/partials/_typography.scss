@@ -1,0 +1,101 @@
+@use "variables" as *;
+
+
+@font-face {
+  font-family: "lato";
+  src: url("/fonts/Lato/Lato-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplaySC";
+  src: url("/fonts/playfair/PlayfairDisplaySC-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+h1 {
+  font-family: $playfair;
+  font-style:italic;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.46rem;
+   a {
+    color: $greenishCyan;
+    text-decoration: none;
+    &:hover {
+      color: $iceBlue;
+    }
+    &:focus {
+      color: $iceBlue;
+      }
+    }
+  }
+
+h2 {
+  font-family: $lato;
+  font-weight: bold;
+  font-size: 6.2rem;
+  color: $spruce;
+  line-height: 5.8rem;
+  letter-spacing: 0.67rem;
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  padding-left: 25%;
+}
+
+h3 {
+  font-size: 11.12rem;
+  font-family: $playfair;
+  font-weight: italic;
+  color: $twilightBlue;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 25%;
+}
+
+h4 {
+  font-family: $lato;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: $spruce;
+}
+
+h5 {
+  font-family: $lato;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.32rem;
+  color: $spruce;
+}
+
+h6 {
+  font-family: $lato;
+  font-weight: bold; 
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: $twilightBlue;
+}
+
+p {
+  font-size: 2rem;
+  font-family: $lato;
+  font-weight: normal;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
