@@ -383,7 +383,6 @@ h4 {
   line-height: 5.8rem;
   letter-spacing: 0.38rem;
   color: #0C5F4C;
-  margin: 30px 0;
 }
 
 h5 {
@@ -402,7 +401,6 @@ h6 {
   line-height: 5.8rem;
   letter-spacing: 0.38rem;
   color: #063974;
-  margin: 30px 0;
 }
 
 p {
@@ -478,26 +476,21 @@ html.index .heroTextContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 65%;
+  width: 70%;
   height: auto;
   padding-right: 50px;
 }
 
 .guyanaImageContainer {
-  width: 35%;
+  width: 30%;
   position: relative;
 }
 .guyanaImageContainer img {
   position: absolute;
   bottom: 20px;
-  right: 0px;
+  right: 0;
   -webkit-box-shadow: -20px 20px #50E3C2;
           box-shadow: -20px 20px #50E3C2;
-  width: 345px;
-  height: 345px;
 }
 
 /*****************/
@@ -742,7 +735,7 @@ html.index .heroTextContainer {
 /*******************/
 .freeTrip {
   background-color: #FAFFFE;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 .freeTripContainer {
@@ -824,15 +817,13 @@ footer {
   html.index .guyanaTextContainer {
     width: 60%;
   }
-  html.index .guyanaTextContainer h4 {
-    margin-top: 20px;
-  }
   html.index .guyanaImageContainer {
     width: 40%;
+    bottom: 50%;
   }
   html.index .guyanaImageContainer img {
     width: 100%;
-    height: 450px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: left;
@@ -892,7 +883,7 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 810px) {
+@media (max-width: 800px) {
   html.index .gallery ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -908,21 +899,6 @@ footer {
     height: 100%;
     -o-object-position: center 65%;
        object-position: center 65%;
-  }
-  html.index .quadBoxContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  html.index .quadBoxContainer li {
-    width: 100%;
-    height: 350px;
-  }
-  html.index .quadBoxContainer li:nth-child(3) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
   }
   html.index .locationImgContainer1, html.index .locationImgContainer4, html.index .locationTextContainer2, html.index .locationTextContainer3 {
     width: 100%;
@@ -951,6 +927,21 @@ footer {
     height: 100%;
     -o-object-position: center 90%;
        object-position: center 90%;
+  }
+  html.index .quadBoxContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html.index .quadBoxContainer li {
+    width: 100%;
+    height: 350px;
+  }
+  html.index .quadBoxContainer li:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   html.index .quadBoxHero {
     display: none;
@@ -995,9 +986,6 @@ footer {
     width: 100%;
     z-index: 30;
   }
-  h6 {
-    margin: 10px 0;
-  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1009,9 +997,6 @@ footer {
     position: fixed;
     right: -120%;
     top: 0;
-    position: absolute;
-    right: -120%;
-    top: 90px;
     width: 100%;
     text-align: center;
     -webkit-transition: 0.3s;
@@ -1027,13 +1012,6 @@ footer {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 5;
-    height: calc(100vh - 90px);
-    resize: none;
-    overflow: auto;
-    background-color: #0C5F4C;
-    opacity: 0.95;
-    transition: all 0.3s ease-in-out;
-    z-index: 10000;
   }
   .menu.active {
     right: 0;
@@ -1073,7 +1051,7 @@ footer {
     font-size: 3rem;
   }
   h3 {
-    font-size: 6rem;
+    font-size: 6.5rem;
   }
   h4 {
     font-size: 3rem;
