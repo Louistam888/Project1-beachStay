@@ -1,0 +1,235 @@
+@use "../variables" as *;
+
+/************/
+/*INDEX.HTML*/
+/************/
+
+
+
+  @media (max-width: 1500px) {
+    html.index {
+
+      .quadBoxContainer li {
+        height: 400px;
+      }
+
+      .locationTextContainer2 {
+        padding-right: 10%;
+      }
+
+      .locationTextContainer3 {
+        padding-left: 10%;
+      }
+    }
+  }
+
+
+
+  @media (max-width: 1250px) {
+    html.index {
+
+     
+
+      .freeTrip {
+        padding: 100px 20px;
+      }
+
+      .guyanaTextContainer {
+        width: 60%;
+      }
+
+
+      .guyanaImageContainer {
+        width: 40%;
+        bottom: 50%;
+     
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: left;
+        }
+      }
+
+      .about p {
+        padding-right: 10px;
+        
+      }
+    }
+  }
+
+
+
+  @media (max-width: 1000px) {
+    html.index {
+
+      .heroTextContainer {
+        padding: 0 20px;
+        justify-content: center;
+      }
+
+      h2, h3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+      }
+
+      .guyanaImageContainer {
+        display: none;
+      }
+
+      .guyanaTextContainer {
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        padding-right: 0;
+      }
+
+      .gallery {
+
+        .wrapper {
+          width: 100%;
+        }
+        
+        ul {
+        gap: 0; 
+        padding: 0;
+        gap: 5px;
+        background-color: $iceBlue;    
+      
+        }
+
+        .photoHover {
+          opacity: 0.65;
+        }
+      }
+
+      .about {
+
+        ul { 
+          flex-direction: column;
+      
+          li {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    html.index {
+
+      .gallery {
+
+        ul {
+          flex-direction: column;
+          gap: 20px;
+      
+          li {
+            width: 100%;
+            height: 300px;
+
+            img {
+            height: 100%;
+            object-position: center 65%;
+              
+            }
+          
+          }
+        }
+      }
+      
+      .locationImgContainer1, .locationImgContainer4, .locationTextContainer2, .locationTextContainer3 {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .locationTextContainer2, .locationTextContainer3{
+        align-items: center;
+        padding: 50px 20px;
+        text-align: center;
+      
+          .linkBox {
+            margin: 30px auto;
+          }
+      }
+
+      .locationImgContainer1, .locationImgContainer4 {
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        box-shadow: none;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-position: center 90%;
+        }
+      }
+
+      .quadBoxContainer {
+        flex-direction: column;
+      
+        li {
+        width: 100%;
+        height: 350px;
+        }
+
+        li:nth-child(3) {
+          order: 4;
+        }
+      }
+
+      .quadBoxHero {
+        display: none;
+      }
+
+      .freeTrip {
+        padding: 50px 20px;
+      }
+    }
+  }
+
+@media (max-width: 480px) {
+  html.index {
+
+    .gallery {
+
+      ul {
+        gap: 10px;
+        li {
+          height: 100%;
+        }
+      }
+    }
+
+    li h5::before {
+      display: none;
+    }
+
+    .about {
+      margin: 50px 0px; 
+
+      ul {
+        li {
+          padding: 20px;
+        }
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+  .quadBoxContainer {
+    
+      li:nth-child(2), li:nth-child(3){
+        height: 500px;
+      }
+    }
+
+  }
+}

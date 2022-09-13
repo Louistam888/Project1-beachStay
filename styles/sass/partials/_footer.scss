@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+
+footer { 
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+  color: $iceBlue;
+  padding: 10px 0;
+}

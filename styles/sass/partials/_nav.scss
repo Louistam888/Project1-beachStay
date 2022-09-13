@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+
+.navContainer {
+  display: flex; 
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 90px;
+
+  .menu {
+    display: flex;
+    align-items: center; 
+   
+  }
+
+    li {
+    padding: 5px 50px;
+    text-transform: uppercase;
+  
+    a {
+      font-family: $lato;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      line-height: 2.9rem;
+      text-decoration: none;
+      color: $iceBlue;
+      &:hover {
+        color: $greenishCyan;
+      }
+      &:focus {
+        color: $greenishCyan;
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  z-index: 20;
+  cursor: pointer;
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    *transition: all 0.3s ease-in-out;
+    background-color: $iceBlue;
+  }
+
+}
+

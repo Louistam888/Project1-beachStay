@@ -1,0 +1,142 @@
+@use "variables" as *;
+
+
+@media (max-width: 1250px) {
+
+  h3 {
+    font-size: 9rem;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  nav {
+    background-color: $spruce;
+    opacity: 0.95;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -120%;
+    top: 0;
+    width: 100%;
+    text-align: center; 
+    transition: 0.3s; 
+    justify-content: center;
+    margin-top: 0;
+    height: 100vh;
+    resize: none;
+    overflow: auto;
+    background-color: $spruce;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+}
+
+  .menu.active {
+      right: 0;
+  }
+
+  .menu li {
+      padding: 30px;  
+  }
+
+  .menu li a {
+      margin: 0;
+      padding: 0;
+      font-size: 5rem;
+      text-align: center; 
+      color: $iceBlue; 
+  }
+
+
+
+ /*hamburger menu*/
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s
+  }
+
+
+  }
+
+  @media (max-width: 800px) {
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 6.5rem;
+    }
+
+    h4 {
+      font-size: 3rem;
+      line-height: 4rem;
+      padding-bottom: 20px;
+    }
+
+    h5 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    .linkBox {
+      font-size: 1.8rem;
+    }
+  }
+
+
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  h3 {
+    font-size: 4.2rem;
+  }
+
+  h4, h5 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.7rem;
+    padding: 20px;
+  }
+
+  .linkBox {
+    font-size: 1.7rem;
+  }
+
+}
