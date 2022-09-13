@@ -9,6 +9,7 @@
 
 }
 
+
 @media (max-width: 1000px) {
 
   nav {
@@ -19,12 +20,19 @@
     z-index: 30;
   }
 
+  h6 {
+    margin: 10px 0;
+  }
+   
   .menu {
     display: flex;
     flex-direction: column;
     position: fixed;
     right: -120%;
     top: 0;
+    position: absolute;
+    right: -120%;
+    top: 90px;
     width: 100%;
     text-align: center; 
     transition: 0.3s; 
@@ -36,6 +44,14 @@
     background-color: $spruce;
     transition: all 0.3s ease-in-out;
     z-index: 5;
+    height: calc(100vh - 90px);
+    resize: none;
+    overflow: auto;
+    background-color: $spruce;
+    opacity: 0.95;
+    transition: all 0.3s ease-in-out;
+    z-index: 10000;
+
 }
 
   .menu.active {
@@ -76,8 +92,8 @@
     transition: 0.3s
   }
 
+}
 
-  }
 
   @media (max-width: 800px) {
 
@@ -86,7 +102,7 @@
     }
 
     h3 {
-      font-size: 6.5rem;
+      font-size: 6rem;
     }
 
     h4 {
