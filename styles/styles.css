@@ -266,7 +266,8 @@ a {
           align-items: center;
   height: 90px;
 }
-.navContainer .menu {
+
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,11 +275,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.navContainer li {
+.menu li {
   padding: 5px 50px;
   text-transform: uppercase;
 }
-.navContainer li a {
+.menu li a {
   font-family: "Lato";
   font-weight: bold;
   font-size: 2rem;
@@ -287,10 +288,10 @@ a {
   text-decoration: none;
   color: #FAFFFE;
 }
-.navContainer li a:hover {
+.menu li a:hover {
   color: #50E3C2;
 }
-.navContainer li a:focus {
+.menu li a:focus {
   color: #50E3C2;
 }
 
@@ -347,7 +348,6 @@ h2 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 6.2rem;
-  color: #0C5F4C;
   line-height: 5.8rem;
   letter-spacing: 0.67rem;
   -webkit-box-pack: start;
@@ -453,22 +453,37 @@ html.index .heroTextContainer {
   left: 0;
 }
 
-/**********************/
-/*VISIT GUYANA SECTION*/
-/**********************/
-.visitGuyana {
+html.index {
+  /**********************/
+  /*VISIT GUYANA SECTION*/
+  /**********************/
+  /*****************/
+  /*GALLERY SECTION*/
+  /*****************/
+  /***************/
+  /*ABOUT SECTION*/
+  /***************/
+  /*******************/
+  /*LOCATIONS SECTION*/
+  /*******************/
+  /*******************/
+  /*FREE TRIP SECTION*/
+  /*******************/
+}
+html.index h2 {
+  color: #0C5F4C;
+}
+html.index .visitGuyana {
   padding-bottom: 100px;
   background-color: #FAFFFE;
 }
-
-.guyanaContainer {
+html.index .guyanaContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
-.guyanaTextContainer {
+html.index .guyanaTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,26 +495,21 @@ html.index .heroTextContainer {
   height: auto;
   padding-right: 50px;
 }
-
-.guyanaImageContainer {
+html.index .guyanaImageContainer {
   width: 30%;
   position: relative;
 }
-.guyanaImageContainer img {
+html.index .guyanaImageContainer img {
   position: absolute;
   bottom: 20px;
   right: 0;
   -webkit-box-shadow: -20px 20px #50E3C2;
           box-shadow: -20px 20px #50E3C2;
 }
-
-/*****************/
-/*GALLERY SECTION*/
-/*****************/
-.gallery {
+html.index .gallery {
   background-color: #D2F9F1;
 }
-.gallery ul {
+html.index .gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,14 +519,14 @@ html.index .heroTextContainer {
   gap: 30px;
   padding: 100px 0;
 }
-.gallery ul li {
+html.index .gallery ul li {
   width: 33.3333333333%;
   aspect-ratio: 1/1;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-.gallery ul li img {
+html.index .gallery ul li img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -524,7 +534,7 @@ html.index .heroTextContainer {
   width: 100%;
   height: auto;
 }
-.gallery ul li .photoHover {
+html.index .photoHover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,18 +552,18 @@ html.index .heroTextContainer {
       -ms-flex-align: center;
           align-items: center;
 }
-.gallery ul li .photoHover p {
+html.index .photoHover p {
   font-family: "Lato";
   font-weight: normal;
   color: white;
   font-size: 7rem;
 }
-.gallery ul li .photoHover:hover {
+html.index .photoHover:hover {
   opacity: 0.8;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-.gallery ul li .photoHover:focus {
+html.index .photoHover:focus {
   opacity: 0.8;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -561,34 +571,10 @@ html.index .heroTextContainer {
   font-weight: bold;
   color: white;
 }
-
-/***************/
-/*ABOUT SECTION*/
-/***************/
-.about {
-  background-color: #FAFFFE;
-  margin-top: 100px;
-  margin-bottom: 130px;
-}
-.about ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.about ul li {
-  width: 50%;
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 80px;
-}
-.about ul h5 {
+html.index h5 {
   position: relative;
 }
-.about ul li h5::before {
+html.index h5::before {
   font-family: "Font Awesome 5 Free";
   font-size: 2.5rem;
   position: absolute;
@@ -612,27 +598,42 @@ html.index .heroTextContainer {
   padding-left: 2px;
   padding-bottom: 2px;
 }
-.about ul li:nth-child(1) h5::before {
+html.index .about {
+  background-color: #FAFFFE;
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+html.index .about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+html.index .about ul li {
+  width: 50%;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 80px;
+}
+html.index .about ul li:nth-child(1) h5::before {
   content: "\e3af";
 }
-.about ul li:nth-child(2) h5::before {
+html.index .about ul li:nth-child(2) h5::before {
   content: "\e533";
 }
-.about ul li:nth-child(3) h5::before {
+html.index .about ul li:nth-child(3) h5::before {
   content: "\f15b";
 }
-.about ul li:nth-child(4) h5::before {
+html.index .about ul li:nth-child(4) h5::before {
   content: "\f879";
 }
-
-/*******************/
-/*LOCATIONS SECTION*/
-/*******************/
-.locations {
+html.index .locations {
   background-color: #D2F9F1;
 }
-
-.quadBoxContainer {
+html.index .quadBoxContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,15 +641,23 @@ html.index .heroTextContainer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.quadBoxContainer li {
+html.index .quadBoxContainer li {
   width: 50%;
   height: 419px;
   position: relative;
 }
-.quadBoxContainer .locationImgContainer1, .quadBoxContainer .locationImgContainer4 {
+html.index .quadBoxContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+html.index .locationImgContainer1, html.index .locationImgContainer4 {
   position: relative;
 }
-.quadBoxContainer .locationImgContainer1 {
+html.index .locationImgContainer1 {
   position: absolute;
   top: -40px;
   left: 0;
@@ -657,7 +666,7 @@ html.index .heroTextContainer {
   width: 90%;
   height: 100%;
 }
-.quadBoxContainer .locationImgContainer4 {
+html.index .locationImgContainer4 {
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -666,15 +675,7 @@ html.index .heroTextContainer {
   width: 90%;
   height: 100%;
 }
-.quadBoxContainer img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-.quadBoxContainer .locationTextContainer2 {
+html.index .locationTextContainer2 {
   position: absolute;
   width: 90%;
   height: 100%;
@@ -692,7 +693,7 @@ html.index .heroTextContainer {
           flex-direction: column;
   padding-right: 27%;
 }
-.quadBoxContainer .locationTextContainer3 {
+html.index .locationTextContainer3 {
   position: absolute;
   width: 90%;
   height: 100%;
@@ -714,31 +715,25 @@ html.index .heroTextContainer {
           align-items: right;
   padding-left: 27%;
 }
-.quadBoxContainer .locationTextContainer3 .linkBox {
+html.index .locationTextContainer3 .linkBox {
   margin-right: 0;
   margin-left: auto;
 }
-
-.quadBoxHero {
+html.index .quadBoxHero {
   width: 100%;
 }
-.quadBoxHero img {
+html.index .quadBoxHero img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
   width: 100%;
 }
-
-/*******************/
-/*FREE TRIP SECTION*/
-/*******************/
-.freeTrip {
+html.index .freeTrip {
   background-color: #FAFFFE;
   padding: 150px 0;
 }
-
-.freeTripContainer {
+html.index .freeTripContainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,6 +747,66 @@ html.index .heroTextContainer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+html.contact h2 {
+  color: #FAFFFE;
+  font-size: 8.7rem;
+}
+html.contact header {
+  background-image: url(/assets/contact-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+html.contact .heroTextContainer {
+  position: absolute;
+  width: 100%;
+  height: calc(80vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  padding-top: 2%;
+  padding-left: 10%;
+}
+
+html.contact .feedbackContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+html.contact .formAreaContainer {
+  width: 60%;
+  border: 2px solid red;
+  height: 500px;
+  position: relative;
+}
+html.contact .contactForm {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+html.contact .addressContainer {
+  width: 40%;
+  border: 2px solid blue;
 }
 
 .linkBox {
@@ -870,7 +925,7 @@ footer {
     gap: 5px;
     background-color: #FAFFFE;
   }
-  html.index .gallery .photoHover {
+  html.index .photoHover {
     opacity: 0.65;
   }
   html.index .about ul {

@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+html.contact {
+
+  .feedbackContainer {
+  display: flex;
+  width: 100%;
+
+  }
+ 
+  .formAreaContainer {
+    width: 60%;
+    border: 2px solid red;
+    height: 500px;
+    position: relative;
+  }
+
+  .contactForm {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+  }
+
+      
+  .addressContainer {
+    width: 40%;
+    border: 2px solid blue;
+  }
+}

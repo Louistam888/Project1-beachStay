@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+html.contact {
+
+  h2 {
+    color: $iceBlue;
+    font-size: 8.7rem;
+  }
+
+  header {
+    background-image: url(/assets/contact-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+    height: 80vh; 
+    width: 100%; 
+    
+  }
+
+
+  .heroTextContainer {
+    position: absolute;
+    width: 100%;
+    height: calc(80vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    padding-top: 2%;
+    padding-left: 10%;
+  }
+
+}

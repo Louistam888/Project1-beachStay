@@ -36,7 +36,7 @@
     background-color: $spruce;
     transition: all 0.3s ease-in-out;
     z-index: 5;
-}
+  }
 
   .menu.active {
       right: 0;
@@ -53,7 +53,6 @@
       text-align: center; 
       color: $iceBlue; 
   }
-
 
 
  /*hamburger menu*/
@@ -76,37 +75,36 @@
     transition: 0.3s
   }
 
+}
 
+@media (max-width: 800px) {
+
+  h2 {
+    font-size: 3rem;
   }
 
-  @media (max-width: 800px) {
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    h3 {
-      font-size: 6.5rem;
-    }
-
-    h4 {
-      font-size: 3rem;
-      line-height: 4rem;
-      padding-bottom: 20px;
-    }
-
-    h5 {
-      font-size: 3rem;
-    }
-
-    p {
-      font-size: 1.8rem;
-    }
-
-    .linkBox {
-      font-size: 1.8rem;
-    }
+  h3 {
+    font-size: 6.5rem;
   }
+
+  h4 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-bottom: 20px;
+  }
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .linkBox {
+    font-size: 1.8rem;
+  }
+}
 
 
 

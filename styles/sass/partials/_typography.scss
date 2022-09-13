@@ -28,23 +28,22 @@ h1 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 3.46rem;
-   a {
-    color: $greenishCyan;
-    text-decoration: none;
-    &:hover {
-      color: $iceBlue;
-    }
-    &:focus {
-      color: $iceBlue;
+    a {
+      color: $greenishCyan;
+      text-decoration: none;
+      &:hover {
+        color: $iceBlue;
+      }
+      &:focus {
+        color: $iceBlue;
       }
     }
-  }
+}
 
 h2 {
   font-family: $lato;
   font-weight: bold;
   font-size: 6.2rem;
-  color: $spruce;
   line-height: 5.8rem;
   letter-spacing: 0.67rem;
   justify-content: flex-start;
