@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <header>
@@ -41,17 +40,47 @@
         <div class="feedbackContainer">
 
           <div class="formAreaContainer">
-            <div class="contactForm">
-              <form action="#" method="post" name="contactForm">
-                <label for="name">
-                  <span class="sr-only">Name:</span>
-                </label>
-                <input type="name" id="name" name="name" placeholder="name" required>
-              </form>
-            </div>
+            <form action="#" method="post" name="contactUsForm">
+             
+              <ul class="upperFormInput">
+                <li>
+                  <label for="name">
+                    <span class="sr-only">Name</span>
+                  </label>
+                  <input type="text" id="name" name="contactUsForm" placeholder="Name" required>
+                </li>
+                <li>
+                  <label for="email address">
+                    <span class="sr-only">Email address</span>
+                  </label>
+                  <input type="email" id="email" name="contactUsForm" placeholder="Email address" required>
+                </li>  
+              </ul>              
+              <textarea name="contactUsForm" id="textarea" cols="30" rows="30" class="contactTextArea" placeholder="Message"></textarea>
+            
+              <button class="linkBox">
+                <a href="#">SUBMIT</a>
+              </button>
+            </form>
           </div>
+         
           <div class="addressContainer">
-
+           
+            <ul>
+              <li class="socialMediaBar">
+                <i class="fa-brands fa-facebook-f fa-3x"></i>
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                <i class="fa-brands fa-twitter fa-3x"></i>
+                <i class="fa-solid fa-square-phone-flip fa-3x"></i>
+              </li>
+              <li class="addressFirstLine">info@email.com</li>
+              <li class="addressLine">123-456-789</li>
+              <li class="addressLine">123 Queen Street West</li>
+              <li class="addressLine">Unit 10</li>
+              <li class="addressLine">Toronto, Ontario</li>
+              <li class="addressLine">M5V2D5</li>
+            </ul>
+          
           </div>
         </div>
       </div>
@@ -63,6 +92,6 @@
 <footer>
   <p>Copyright © 2019 HackerYou</p>
 </footer>
-
+<script src="https://kit.fontawesome.com/2d0137e58f.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </html>

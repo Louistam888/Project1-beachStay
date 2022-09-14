@@ -783,8 +783,8 @@ html.contact .heroTextContainer {
   z-index: 3;
   bottom: 0;
   left: 0;
-  padding-top: 2%;
-  padding-left: 10%;
+  padding-top: 5%;
+  padding-right: 60%;
 }
 
 html.contact .feedbackContainer {
@@ -792,28 +792,141 @@ html.contact .feedbackContainer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 450px;
 }
 html.contact .formAreaContainer {
   width: 60%;
-  border: 2px solid red;
-  height: 500px;
   position: relative;
 }
-html.contact .contactForm {
+html.contact .formAreaContainer form {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
+  left: 0;
+  top: -220px;
+  background-color: #FAFFFE;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  z-index: 3;
+}
+html.contact .upperFormInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  gap: 50px;
+}
+html.contact .upperFormInput li {
+  width: 50%;
+}
+html.contact .upperFormInput input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  padding: 10px;
+}
+html.contact .contactTextArea {
   width: 100%;
   height: 100%;
-  position: absolute;
+  border: 2px solid #50E3C2;
+  margin-top: 50px;
+  resize: none;
+  padding: 10px;
+}
+html.contact .linkBox {
+  width: 100%;
 }
 html.contact .addressContainer {
   width: 40%;
-  border: 2px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html.contact .addressContainer ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+html.contact .socialMediaBar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 8px;
+}
+html.contact .socialMediaBar i {
+  width: 50px;
+  height: 100%;
+  margin-right: 10px;
+}
+html.contact .socialMediaBar i:nth-child(1) {
+  margin-right: 3px;
+}
+html.contact .addressFirstLine {
+  font-family: "Lato";
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  padding-bottom: 20px;
+}
+html.contact .addressLine {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .linkBox {
   font-family: "PlayfairDisplaySC";
   font-style: italic;
   font-size: 2rem;
-  margin-top: 3.2rem;
+  margin-top: 50px;
   padding: 15px;
   background-color: #063974;
   width: 250px;
@@ -1039,7 +1152,7 @@ footer {
     opacity: 0.95;
     position: fixed;
     width: 100%;
-    z-index: 30;
+    z-index: 20;
   }
   .menu {
     display: -webkit-box;
