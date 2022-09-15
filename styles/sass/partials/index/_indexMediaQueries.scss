@@ -27,7 +27,10 @@
 
   @media (max-width: 1250px) {
     html.index {
-
+      
+      h3 {
+        font-size: 9rem;
+      }
      
 
       .freeTrip {
@@ -121,6 +124,27 @@
   @media (max-width: 800px) {
     html.index {
 
+      h2 {
+        font-size: 3rem;
+      }
+    
+      h3 {
+        font-size: 6.5rem;
+      
+      }
+    
+      h4 {
+        font-size: 3rem;
+        line-height: 4rem;
+        padding-bottom: 20px;
+      }
+    
+      h5 {
+        font-size: 3rem;
+      }
+    
+     
+
       .gallery {
 
         ul {
@@ -194,6 +218,26 @@
 
 @media (max-width: 480px) {
   html.index {
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+  
+    h3 {
+      font-size: 4.2rem;
+    }
+  
+    h4, h5 {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  
+    
 
     .gallery {
 

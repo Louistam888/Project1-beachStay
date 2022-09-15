@@ -1,13 +1,11 @@
 @use "variables" as *;
 
 
-@media (max-width: 1250px) {
+// @media (max-width: 1250px) {
 
-  h3 {
-    font-size: 9rem;
-  }
 
-}
+
+// }
 
 @media (max-width: 1000px) {
 
@@ -79,29 +77,11 @@
 
 @media (max-width: 800px) {
 
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 6.5rem;
-  }
-
-  h4 {
-    font-size: 3rem;
-    line-height: 4rem;
-    padding-bottom: 20px;
-  }
-
-  h5 {
-    font-size: 3rem;
-  }
-
-  p {
+  .linkBox {
     font-size: 1.8rem;
   }
 
-  .linkBox {
+  p {
     font-size: 1.8rem;
   }
 }
@@ -110,31 +90,13 @@
 
 @media (max-width: 480px) {
 
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-  }
-
-  h3 {
-    font-size: 4.2rem;
-  }
-
-  h4, h5 {
-    font-size: 2.8rem;
-    text-align: center;
+  .linkBox {
+    font-size: 1.7rem;
   }
 
   p {
     font-size: 1.7rem;
     padding: 20px;
-  }
-
-  .linkBox {
-    font-size: 1.7rem;
   }
 
 }

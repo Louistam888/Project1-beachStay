@@ -752,6 +752,15 @@ html.index .freeTripContainer {
 html.contact h2 {
   color: #FAFFFE;
   font-size: 8.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding-left: 10%;
+  padding-bottom: 50px;
 }
 html.contact header {
   background-image: url(/assets/contact-image-1.jpg);
@@ -783,8 +792,6 @@ html.contact .heroTextContainer {
   z-index: 3;
   bottom: 0;
   left: 0;
-  padding-top: 5%;
-  padding-right: 60%;
 }
 
 html.contact .feedbackContainer {
@@ -795,7 +802,7 @@ html.contact .feedbackContainer {
   height: 450px;
 }
 html.contact .formAreaContainer {
-  width: 60%;
+  width: 55%;
   position: relative;
 }
 html.contact .formAreaContainer form {
@@ -821,12 +828,42 @@ html.contact .formAreaContainer form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 3;
+}
+html.contact .formAreaContainer form input::-webkit-input-placeholder {
   font-family: "Lato";
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
-  z-index: 3;
+}
+html.contact .formAreaContainer form input::-moz-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.contact .formAreaContainer form input:-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.contact .formAreaContainer form input::-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.contact .formAreaContainer form input::placeholder, html.contact .formAreaContainer textarea {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
 }
 html.contact .upperFormInput {
   display: -webkit-box;
@@ -859,7 +896,7 @@ html.contact .linkBox {
   width: 100%;
 }
 html.contact .addressContainer {
-  width: 40%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,6 +910,7 @@ html.contact .addressContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 80px;
 }
 html.contact .addressContainer ul {
   width: 100%;
@@ -883,10 +921,6 @@ html.contact .addressContainer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 150px;
-  padding-right: 100px;
 }
 html.contact .socialMediaBar {
   width: 100%;
@@ -906,6 +940,11 @@ html.contact .socialMediaBar i {
 html.contact .socialMediaBar i:nth-child(1) {
   margin-right: 3px;
 }
+html.contact .socialMediaBar a {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: black;
+}
 html.contact .addressFirstLine {
   font-family: "Lato";
   font-size: 3.5rem;
@@ -917,11 +956,142 @@ html.contact .addressFirstLine {
 html.contact .addressLine {
   font-family: "Lato";
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
 
+@media (max-width: 1000px) {
+  html.contact h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  html.contact .feedbackContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  html.contact .formAreaContainer {
+    width: 100%;
+    border: 2px solid #50E3C2;
+    margin-top: 50px;
+  }
+  html.contact .formAreaContainer form {
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  html.contact .addressContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  html.contact .addressContainer ul {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  html.contact .socialMediaBar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  html.contact h2 {
+    font-size: 6.5rem;
+  }
+  html.contact form {
+    font-size: 1.8rem;
+  }
+  html.contact .upperFormInput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  html.contact .upperFormInput li {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 800px) {
+  html.contact h2 {
+    font-size: 4.2rem;
+  }
+  html.contact form input::-webkit-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input::-moz-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input:-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input::-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input::placeholder, html.contact textarea {
+    font-size: 1.8rem;
+  }
+  html.contact .addressFirstLine {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 480px) {
+  html.contact .formAreaContainer {
+    border: none;
+  }
+  html.contact .formAreaContainer form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px;
+  }
+  html.contact form input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input::-moz-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input:-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input::-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input::placeholder, html.contact textarea {
+    font-size: 1.7rem;
+  }
+}
 .linkBox {
   font-family: "PlayfairDisplaySC";
   font-style: italic;
@@ -979,6 +1149,9 @@ footer {
   }
 }
 @media (max-width: 1250px) {
+  html.index h3 {
+    font-size: 9rem;
+  }
   html.index .freeTrip {
     padding: 100px 20px;
   }
@@ -1052,6 +1225,20 @@ footer {
   }
 }
 @media (max-width: 800px) {
+  html.index h2 {
+    font-size: 3rem;
+  }
+  html.index h3 {
+    font-size: 6.5rem;
+  }
+  html.index h4 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-bottom: 20px;
+  }
+  html.index h5 {
+    font-size: 3rem;
+  }
   html.index .gallery ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1119,6 +1306,20 @@ footer {
   }
 }
 @media (max-width: 480px) {
+  html.index h1 {
+    font-size: 2.5rem;
+  }
+  html.index h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  html.index h3 {
+    font-size: 4.2rem;
+  }
+  html.index h4, html.index h5 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
   html.index .gallery ul {
     gap: 10px;
   }
@@ -1139,11 +1340,6 @@ footer {
   }
   html.index .quadBoxContainer li:nth-child(2), html.index .quadBoxContainer li:nth-child(3) {
     height: 500px;
-  }
-}
-@media (max-width: 1250px) {
-  h3 {
-    font-size: 9rem;
   }
 }
 @media (max-width: 1000px) {
@@ -1215,47 +1411,19 @@ footer {
   }
 }
 @media (max-width: 800px) {
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 6.5rem;
-  }
-  h4 {
-    font-size: 3rem;
-    line-height: 4rem;
-    padding-bottom: 20px;
-  }
-  h5 {
-    font-size: 3rem;
-  }
-  p {
+  .linkBox {
     font-size: 1.8rem;
   }
-  .linkBox {
+  p {
     font-size: 1.8rem;
   }
 }
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-  }
-  h3 {
-    font-size: 4.2rem;
-  }
-  h4, h5 {
-    font-size: 2.8rem;
-    text-align: center;
+  .linkBox {
+    font-size: 1.7rem;
   }
   p {
     font-size: 1.7rem;
     padding: 20px;
-  }
-  .linkBox {
-    font-size: 1.7rem;
   }
 }
