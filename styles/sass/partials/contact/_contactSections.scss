@@ -2,24 +2,26 @@
 
 html.contact {
 
-  .feedbackContainer {
-  display: flex;
-  width: 100%;
-  height: 450px;
+  h2 {
+    line-height: 4rem;
   }
- 
+
+  .feedbackContainer {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    }
+   
   .formAreaContainer {
     width: 55%;
     position: relative;
+    margin-top: -220px;
+    
   
-
     form {
       width: 100%;
       height: 600px;  
-      position: absolute; 
       box-shadow: 20px 20px $greenishCyan;
-      left: 0;
-      top: -220px;
       background-color: $iceBlue;
       padding: 50px;
       display: flex;
@@ -28,7 +30,7 @@ html.contact {
       align-items: center;
       z-index: 3;
     } 
-
+  
     form input::placeholder, textarea{
       font-family: $lato;
       font-size: 2rem;
@@ -36,38 +38,40 @@ html.contact {
       line-height: 3.2rem;
       letter-spacing: 0.2rem;
     }
-  }
-
-  .upperFormInput {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    gap: 50px;
-
-    li {
-      width: 50%;
-    }
-
-    input {
+  
+    .upperFormInput {
+      display: flex;
+      justify-content: space-evenly;
       width: 100%;
-      border: none;
-      border-bottom: 2px solid $greenishCyan;
-      padding: 10px
-    }  
-  }
-
-  .contactTextArea {
+      gap: 50px;
+    
+      li {
+        width: 50%;
+      }
+    
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid $greenishCyan;
+        padding: 10px
+      }  
+    }
+    
+    .contactTextArea {
       width: 100%;
       height: 100%;
       border: 2px solid $greenishCyan;
       margin-top: 50px;
       resize: none;
       padding: 10px;
+    }
+      
+    .linkBox {
+      width: 100%;
+    }
   }
+
   
-  .linkBox {
-    width: 100%;
-  }
 
   .addressContainer {
     width: 45%;

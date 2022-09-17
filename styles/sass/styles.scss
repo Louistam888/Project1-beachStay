@@ -2,14 +2,18 @@
 @use "partials/variables" as *;
 @use "partials/nav";
 @use "partials/typography";
+@use "partials/secondaryPageStyles";
 
 
 @use "partials/index/header";
 @use "partials/index/sections";
 
-@use "partials/contact/contactHeader.scss";
+@use "partials/contact/contactHeader";
 @use "partials/contact/contactSections";
 @use "partials/contact/contactMediaQueries";
+
+@use "partials/blog/blogHeader";
+@use "partials/blog/blogSections";
 
 @use "partials/links";
 @use "partials/footer";

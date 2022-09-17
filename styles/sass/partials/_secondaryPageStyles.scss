@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+/**********************************************************/
+/*GENERAL STYLES SHARED BY ALL PAGES OTHER THAN INDEX.HTML*/
+/**********************************************************/
+
+html.contact, html.blog {
+  h2 {
+    color: $iceBlue;
+    font-family: $lato;
+    font-size: 8.7rem;
+    font-weight: bold;
+    display: flex;
+    line-height: 5.8rem;
+    letter-spacing: 0.67rem;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10%;
+    padding-bottom: 50px;
+  }
+}
+
+h3 {
+  font-family: $lato;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: $spruce;
+}
+
+  
+h4 {
+  font-family: $lato;
+  font-weight: bold; 
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: $twilightBlue;
+}
+
+h5 {
+  font-family: $lato;
+  font-weight: bold; 
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: $black;
+}
+
+
+

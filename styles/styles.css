@@ -253,6 +253,24 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: "PlayfairDisplaySC";
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.46rem;
+}
+h1 a {
+  color: #50E3C2;
+  text-decoration: none;
+}
+h1 a:hover {
+  color: #FAFFFE;
+}
+h1 a:focus {
+  color: #FAFFFE;
+}
+
 .navContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,54 +344,47 @@ a {
   font-weight: 900;
   font-style: italic;
 }
-h1 {
-  font-family: "PlayfairDisplaySC";
-  font-style: italic;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 3.46rem;
-}
-h1 a {
-  color: #50E3C2;
-  text-decoration: none;
-}
-h1 a:hover {
-  color: #FAFFFE;
-}
-h1 a:focus {
-  color: #FAFFFE;
+/***************************************/
+/*GENERAL STYLE SHARED ACROSS ALL PAGES*/
+/***************************************/
+p {
+  font-size: 2rem;
+  font-family: "Lato";
+  font-weight: normal;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  white-space: pre-line;
+  color: #2C2C2C;
 }
 
-h2 {
+/**********************************************************/
+/*GENERAL STYLES SHARED BY ALL PAGES OTHER THAN INDEX.HTML*/
+/**********************************************************/
+html.contact h2, html.blog h2 {
+  color: #FAFFFE;
   font-family: "Lato";
+  font-size: 8.7rem;
   font-weight: bold;
-  font-size: 6.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   line-height: 5.8rem;
   letter-spacing: 0.67rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 25%;
+  padding-left: 10%;
+  padding-bottom: 50px;
 }
 
 h3 {
-  font-size: 11.12rem;
-  font-family: "PlayfairDisplaySC";
-  font-weight: italic;
-  color: #063974;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 100%;
-  padding-left: 25%;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: #0C5F4C;
 }
 
 h4 {
@@ -382,33 +393,16 @@ h4 {
   font-size: 3.5rem;
   line-height: 5.8rem;
   letter-spacing: 0.38rem;
-  color: #0C5F4C;
+  color: #063974;
 }
 
 h5 {
   font-family: "Lato";
   font-weight: bold;
-  font-size: 3rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.32rem;
-  color: #0C5F4C;
-}
-
-h6 {
-  font-family: "Lato";
-  font-weight: bold;
   font-size: 3.5rem;
   line-height: 5.8rem;
   letter-spacing: 0.38rem;
-  color: #063974;
-}
-
-p {
-  font-size: 2rem;
-  font-family: "Lato";
-  font-weight: normal;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  color: #2C2C2C;
 }
 
 html.index header {
@@ -471,7 +465,60 @@ html.index {
   /*******************/
 }
 html.index h2 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 6.2rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.67rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20%;
   color: #0C5F4C;
+}
+html.index h3 {
+  font-size: 11.12rem;
+  font-family: "PlayfairDisplaySC";
+  font-weight: italic;
+  color: #063974;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding-left: 20%;
+  margin: 30px 0;
+}
+html.index h4 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: #0C5F4C;
+}
+html.index h5 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.32rem;
+  color: #0C5F4C;
+}
+html.index h6 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: #063974;
 }
 html.index .visitGuyana {
   padding-bottom: 100px;
@@ -750,17 +797,7 @@ html.index .freeTripContainer {
 }
 
 html.contact h2 {
-  color: #FAFFFE;
-  font-size: 8.7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 100%;
-  padding-left: 10%;
-  padding-bottom: 50px;
+  line-height: 4rem;
 }
 html.contact header {
   background-image: url(/assets/contact-image-1.jpg);
@@ -794,6 +831,9 @@ html.contact .heroTextContainer {
   left: 0;
 }
 
+html.contact h2 {
+  line-height: 4rem;
+}
 html.contact .feedbackContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,15 +844,13 @@ html.contact .feedbackContainer {
 html.contact .formAreaContainer {
   width: 55%;
   position: relative;
+  margin-top: -220px;
 }
 html.contact .formAreaContainer form {
   width: 100%;
   height: 600px;
-  position: absolute;
   -webkit-box-shadow: 20px 20px #50E3C2;
           box-shadow: 20px 20px #50E3C2;
-  left: 0;
-  top: -220px;
   background-color: #FAFFFE;
   padding: 50px;
   display: -webkit-box;
@@ -865,7 +903,7 @@ html.contact .formAreaContainer form input::placeholder, html.contact .formAreaC
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.contact .upperFormInput {
+html.contact .formAreaContainer .upperFormInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,16 +913,16 @@ html.contact .upperFormInput {
   width: 100%;
   gap: 50px;
 }
-html.contact .upperFormInput li {
+html.contact .formAreaContainer .upperFormInput li {
   width: 50%;
 }
-html.contact .upperFormInput input {
+html.contact .formAreaContainer .upperFormInput input {
   width: 100%;
   border: none;
   border-bottom: 2px solid #50E3C2;
   padding: 10px;
 }
-html.contact .contactTextArea {
+html.contact .formAreaContainer .contactTextArea {
   width: 100%;
   height: 100%;
   border: 2px solid #50E3C2;
@@ -892,7 +930,7 @@ html.contact .contactTextArea {
   resize: none;
   padding: 10px;
 }
-html.contact .linkBox {
+html.contact .formAreaContainer .linkBox {
   width: 100%;
 }
 html.contact .addressContainer {
@@ -1043,31 +1081,29 @@ html.contact .addressLine {
     width: 100%;
     margin: 10px 0;
   }
-}
-@media (max-width: 800px) {
-  html.contact h2 {
-    font-size: 4.2rem;
-  }
-  html.contact form input::-webkit-input-placeholder {
+  form input::-webkit-input-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input::-moz-placeholder {
+  form input::-moz-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input:-ms-input-placeholder {
+  form input:-ms-input-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input::-ms-input-placeholder {
+  form input::-ms-input-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input::placeholder, html.contact textarea {
+  form input::placeholder, textarea {
     font-size: 1.8rem;
   }
-  html.contact .addressFirstLine {
+  .addressFirstLine {
     font-size: 2.8rem;
   }
 }
 @media (max-width: 480px) {
+  html.contact h2 {
+    font-size: 4.2rem;
+  }
   html.contact .formAreaContainer {
     border: none;
   }
@@ -1092,6 +1128,263 @@ html.contact .addressLine {
     font-size: 1.7rem;
   }
 }
+html.blog header {
+  background-image: url(/assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+html.blog .heroTextContainer {
+  position: absolute;
+  width: 100%;
+  height: calc(80vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+}
+
+html.blog .blogPost {
+  position: relative;
+  width: 100%;
+  margin-bottom: -220px;
+}
+html.blog aside {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+html.blog .asideContainer {
+  width: 350px;
+  padding-top: 300px;
+  position: relative;
+}
+html.blog .asideImageContainer {
+  width: 100%;
+  height: 400px;
+}
+html.blog .asideImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+html.blog .blogPostSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: -220px;
+}
+html.blog .mainSectionContainerBlog {
+  width: 60%;
+  border-right: 5px solid #50E3C2;
+  border-bottom: 5px solid #50E3C2;
+  position: relative;
+  left: 0;
+}
+html.blog .mainImageContainer {
+  width: 100%;
+  position: relative;
+  right: 20px;
+  top: -20px;
+}
+html.blog .mainImageContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
+}
+html.blog .blogTextContainer {
+  margin: 50px 0;
+  position: relative;
+  padding-right: 50px;
+  right: -12.5%;
+  width: 87.5%;
+}
+html.blog .byline {
+  font-style: italic;
+  color: #063974;
+  line-height: 3.2rem;
+  margin-bottom: 3.5rem;
+}
+html.blog .commentDate {
+  font-weight: bold;
+  color: #063974;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+html.blog .greenLink {
+  color: #0C5F4C;
+  font-weight: bold;
+}
+html.blog .recentPosts {
+  margin-top: 50px;
+}
+html.blog .recentPosts ul {
+  font-size: 2rem;
+  font-family: "Lato";
+  font-weight: normal;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  color: #2C2C2C;
+  padding-left: 30px;
+  list-style: disc;
+}
+html.blog .recentPosts ul a {
+  color: #2C2C2C;
+}
+html.blog .comment {
+  margin: 50px 0;
+}
+html.blog .commentsSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html.blog .commentContainer {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html.blog .commentPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 25px 0;
+}
+html.blog .commenterPhoto {
+  width: 10%;
+}
+html.blog .userComment {
+  width: 85%;
+  padding-left: 50px;
+}
+html.blog .formAreaContainer {
+  width: 100%;
+}
+html.blog .formAreaContainer form {
+  width: 100%;
+  height: 600px;
+  background-color: #FAFFFE;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 0;
+}
+html.blog .formAreaContainer form input::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.blog .formAreaContainer form input::-moz-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.blog .formAreaContainer form input:-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.blog .formAreaContainer form input::-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.blog .formAreaContainer form input::placeholder, html.blog .formAreaContainer textarea {
+  font-family: "Lato";
+  font-size: 2rem;
+  font-weight: light;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+html.blog .formAreaContainer .upperFormInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  gap: 50px;
+}
+html.blog .formAreaContainer .upperFormInput li {
+  width: 50%;
+}
+html.blog .formAreaContainer .upperFormInput input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  padding: 10px;
+}
+html.blog .formAreaContainer .contactTextArea {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #50E3C2;
+  margin-top: 50px;
+  resize: none;
+  padding: 10px;
+}
+html.blog .formAreaContainer .linkBox {
+  width: 100%;
+}
+
 .linkBox {
   font-family: "PlayfairDisplaySC";
   font-style: italic;
@@ -1132,6 +1425,9 @@ footer {
   background-color: #2C2C2C;
   color: #FAFFFE;
   padding: 10px 0;
+}
+footer p {
+  color: #FAFFFE;
 }
 
 /************/
@@ -1175,18 +1471,17 @@ footer {
   }
 }
 @media (max-width: 1000px) {
+  html.index header {
+    margin-bottom: 50px;
+  }
   html.index .heroTextContainer {
     padding: 0 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  html.index h2, html.index h3 {
-    padding-left: 20px;
-    padding-right: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  html.index .offsetHeroImage {
+    display: none;
   }
   html.index .guyanaImageContainer {
     display: none;
@@ -1227,9 +1522,11 @@ footer {
 @media (max-width: 800px) {
   html.index h2 {
     font-size: 3rem;
+    line-height: 3rem;
   }
   html.index h3 {
-    font-size: 6.5rem;
+    font-size: 6rem;
+    margin: 0;
   }
   html.index h4 {
     font-size: 3rem;
@@ -1311,10 +1608,10 @@ footer {
   }
   html.index h2 {
     font-size: 2.5rem;
-    line-height: 3.5rem;
+    line-height: 1.8rem;
   }
   html.index h3 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
   }
   html.index h4, html.index h5 {
     font-size: 2.8rem;

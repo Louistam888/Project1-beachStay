@@ -1,13 +1,10 @@
 @use "../variables" as *;
 
-html.contact {
+html.blog {
 
-  h2 {
-    line-height: 4rem;
-  }
 
   header {
-    background-image: url(/assets/contact-image-1.jpg);
+    background-image: url(/assets/blog-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

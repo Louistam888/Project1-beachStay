@@ -1,0 +1,218 @@
+@use "../variables" as *;
+
+html.blog {
+
+  .blogPost {
+    position: relative;
+    width: 100%;
+    margin-bottom: -220px;
+  
+  }
+
+  // .blogPost:after {
+  //   content: "";
+  //   display: block;
+  //   position:absolute;
+  //   width: 41.5%; 
+  //   bottom: -10px;
+  //   right: 0;
+  //   border: 20px solid white;
+  // }
+
+  aside {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+    right: 0;
+
+
+  }
+
+  .asideContainer {
+    width: 350px;
+    padding-top: 300px;
+
+    position: relative;
+    
+
+  }
+
+  .asideImageContainer {
+    width: 100%;
+    height: 400px; 
+  
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .blogPostSection {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -220px;
+  }
+  
+  .mainSectionContainerBlog {
+    width: 60%;
+    border-right: 5px solid $greenishCyan;
+    border-bottom: 5px solid $greenishCyan;
+    position: relative; 
+    left: 0;
+  }
+
+
+  .mainImageContainer {
+    width: 100%;
+
+    position: relative; 
+    right: 20px;
+    top: -20px;
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 20px 20px $greenishCyan;
+    }
+  }
+
+  .blogTextContainer {
+    margin: 50px 0;
+    position: relative;
+    padding-right: 50px;
+    right: -12.5%;
+    width: 87.5%
+  }
+
+  .byline {
+    font-style: italic;
+    color: $twilightBlue;
+    line-height: 3.2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .commentDate {
+    font-weight: bold;
+    color: $twilightBlue;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .greenLink {
+    color: $spruce;
+    font-weight: bold;
+  }
+
+  .recentPosts {
+    margin-top: 50px;
+  
+    ul {
+      font-size: 2rem;
+      font-family: $lato;
+      font-weight: normal;
+      line-height: 3.2rem;
+      letter-spacing: 0.2rem;
+      color: $black;
+      padding-left: 30px;
+      list-style: disc;
+    
+      a {
+      color: $black;
+      }
+    }
+  }
+
+  .comment {
+    margin: 50px 0;
+  }
+    
+  .commentsSection {
+    width: 100%; 
+    display: flex;
+  }
+
+  .commentContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .commentPost {
+    display: flex; 
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .commenterPhoto {
+    width: 10%;
+  }
+
+  .userComment {
+    width: 85%;
+    padding-left: 50px;
+  }
+
+
+   
+  .formAreaContainer {
+    width: 100%;
+   
+    form {
+      width: 100%;
+      height: 600px;  
+      background-color: $iceBlue;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 100px 0;
+    } 
+  
+    form input::placeholder, textarea{
+      font-family: $lato;
+      font-size: 2rem;
+      font-weight: light;
+      line-height: 3.2rem;
+      letter-spacing: 0.2rem;
+    }
+  
+    .upperFormInput {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      gap: 50px;
+    
+      li {
+        width: 50%;
+      }
+    
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid $greenishCyan;
+        padding: 10px
+      }  
+    }
+    
+    .contactTextArea {
+      width: 100%;
+      height: 100%;
+      border: 2px solid $greenishCyan;
+      margin-top: 50px;
+      resize: none;
+      padding: 10px;
+    }
+      
+    .linkBox {
+      width: 100%;
+    }
+  }
+}

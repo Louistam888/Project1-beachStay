@@ -75,26 +75,25 @@
       }
     }
   }
+
+
+
+  form input::placeholder, textarea {
+    font-size: 1.8rem; 
+  }
+
+  .addressFirstLine {
+    font-size: 2.8rem;
+  }
 }
 
-@media (max-width: 800px) {
-  html.contact {
-    h2 {
-      font-size: 4.2rem;
-    }
-
-    form input::placeholder, textarea {
-      font-size: 1.8rem; 
-    }
-
-    .addressFirstLine {
-      font-size: 2.8rem;
-    }
-  }
-} 
 
 @media (max-width: 480px) {
   html.contact {
+
+    h2 {
+      font-size: 4.2rem;
+    }
 
     .formAreaContainer {
       border: none;
