@@ -10,3 +10,7 @@ document.querySelectorAll(".navLink").forEach(menuLi => menuLi.addEventListener(
   hamburger.classList.remove("active");
   menu.classList.remove("active");
 }));
+
+
+/*created using the javascript hamburger menu tutorial on youTube by codefoxx
+https://www.youtube.com/watch?v=flItyHiDm7E*/
