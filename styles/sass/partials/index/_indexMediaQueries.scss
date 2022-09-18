@@ -1,10 +1,8 @@
 @use "../variables" as *;
 
-/************/
-/*INDEX.HTML*/
-/************/
-
-
+/******************************/
+/*MEDIA QUERIES FOR INDEX.HTML*/
+/******************************/
 
   @media (max-width: 1500px) {
     html.index {
@@ -31,7 +29,6 @@
       h3 {
         font-size: 9rem;
       }
-     
 
       .freeTrip {
         padding: 100px 20px;
@@ -40,7 +37,6 @@
       .guyanaTextContainer {
         width: 60%;
       }
-
 
       .guyanaImageContainer {
         width: 40%;
@@ -70,15 +66,19 @@
         margin-bottom: 50px;
       }
 
+      h2, h3 {
+        justify-content: center;
+        padding-left: 0;
+      }
+
       .heroTextContainer {
-        padding: 0 20px;
+        padding: 0;
         justify-content: center;
       }
 
       .offsetHeroImage {
         display: none;
       }
-
 
       .guyanaImageContainer {
         display: none;
@@ -103,7 +103,6 @@
         padding: 0;
         gap: 5px;
         background-color: $iceBlue;    
-      
         }
       }
 
@@ -123,6 +122,7 @@
       }
     }
   }
+
 
   @media (max-width: 800px) {
     html.index {
@@ -147,8 +147,6 @@
         font-size: 3rem;
       }
     
-     
-
       .gallery {
 
         ul {
@@ -163,7 +161,6 @@
             height: 100%;
             object-position: center 65%;
             }
-          
           }
         }
       }
@@ -240,8 +237,6 @@
       font-size: 2.8rem;
       text-align: center;
     }
-  
-    
 
     .gallery {
 
@@ -277,6 +272,5 @@
         height: 500px;
       }
     }
-
   }
 }

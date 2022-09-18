@@ -1,5 +1,9 @@
 @use "variables" as *;
 
+/****************************************/
+/*GENERAL STYLES SHARED ACROSS ALL PAGES*/
+/****************************************/
+
 
 @font-face {
   font-family: "lato";
@@ -19,12 +23,6 @@
   font-weight: 900;
   font-style: italic;
 }
-
-
-/***************************************/
-/*GENERAL STYLE SHARED ACROSS ALL PAGES*/
-/***************************************/
-
 
 
 p {

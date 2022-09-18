@@ -1,0 +1,228 @@
+@use "../variables" as *;
+
+/*****************************/
+/*MEDIA QUERIES FOR BLOG.HTML*/
+/*****************************/
+
+@media (max-width: 1000px) {
+  html.blog {
+
+    .heroTextContainer1 {
+      display: none;
+    }
+    
+    .heroTextContainer2 {
+      display: inline-flex;
+    }
+
+    h2 {
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+    }
+
+    .blogPostSection {
+      flex-direction: column;
+      top: 0;
+    }
+
+    .mainSectionContainerBlog {
+      width: 100%;
+      border: none;
+    }
+
+    .mainImageContainer {
+      display: none;
+    }
+      
+    .blogTextContainer {
+      margin-top: 50px;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      right: 0;
+      width: 85%;
+    }
+
+    aside {
+      width: 100%;
+      justify-content: flex-end;
+      justify-content: center;
+    }
+
+    .asideContainer {
+      margin: 50px auto;
+      width: 85%;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .asideImageContainer {
+      display: none;
+      padding-top: 300px;
+    }
+  
+    .ourMission {
+      text-align: center;
+
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+
+    .recentPosts {
+      margin: 50px auto;
+      text-align: center;
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        list-style: inside;
+      
+        li {
+          text-align: left;
+          width: 50%;
+          padding: 0px;
+        }
+      }
+    }
+
+    .comment {
+      margin-top: 200px;
+      margin-bottom: 0;
+    }
+
+    .commentContainer {
+      width: 100%;
+
+      h5 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  html.blog {
+
+    h2 {
+      font-size: 6.5rem;
+    }
+
+    h3 {
+      line-height: 3.5rem;
+      text-align: center;
+    }
+
+    .byline {
+      text-align: center;
+    }
+  
+    form {
+      font-size: 1.8rem; 
+    }
+  
+    .upperFormInput {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    
+      li {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1.8rem;
+      }
+    }
+
+    form input::placeholder, textarea {
+      font-size: 1.8rem; 
+    }
+
+    .recentPosts {
+      margin: 50px auto;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+    
+      ul {
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: nowrap;
+      
+        li {
+          width: 100%;
+          font-size: 1.8rem;
+        }
+      }
+    }
+    
+    .addressFirstLine {
+      font-size: 2.8rem;
+    }
+
+    .commentDate {
+      line-height: 2.5rem;
+    }
+
+    .commenterPhoto {
+      width: 70px;
+    }
+  
+    .userComment {
+      width: 85%;
+      padding-left: 50px;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  html.blog {
+
+    h2 {
+      font-size: 4.2rem;
+    }
+
+    li {
+      font-size: 1.7rem;
+    }
+
+    .formAreaContainer {
+      border: none;
+  
+      form {
+        box-shadow: none;
+        padding: 10px;
+      }
+    }
+
+    form input::placeholder, textarea {
+      font-size: 1.7rem; 
+    }
+
+    .commentDate {
+       padding: 0 20px;
+    }
+
+    .commenterPhoto {
+      width: 25%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .userComment {
+      width: 75%;
+      padding-left: 10px;
+    }
+  }
+}

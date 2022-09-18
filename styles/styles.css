@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -253,6 +254,11 @@ a {
   text-decoration: none;
 }
 
+/***********/
+/*VARIABLES*/
+/***********/ /*****/
+/*NAV*/
+/*****/
 h1 {
   font-family: "PlayfairDisplaySC";
   font-style: italic;
@@ -328,6 +334,9 @@ h1 a:focus {
   background-color: #FAFFFE;
 }
 
+/****************************************/
+/*GENERAL STYLES SHARED ACROSS ALL PAGES*/
+/****************************************/
 @font-face {
   font-family: "lato";
   src: url("/fonts/Lato/Lato-Bold.ttf");
@@ -344,9 +353,6 @@ h1 a:focus {
   font-weight: 900;
   font-style: italic;
 }
-/***************************************/
-/*GENERAL STYLE SHARED ACROSS ALL PAGES*/
-/***************************************/
 p {
   font-size: 2rem;
   font-family: "Lato";
@@ -358,7 +364,7 @@ p {
 }
 
 /**********************************************************/
-/*GENERAL STYLES SHARED BY ALL PAGES OTHER THAN INDEX.HTML*/
+/*STYLES SHARED BY SECONDARY PAGES OTHER THAN INDEX.HTML*/
 /**********************************************************/
 html.contact h2, html.blog h2 {
   color: #FAFFFE;
@@ -405,6 +411,20 @@ h5 {
   color: #2C2C2C;
 }
 
+.greenLink {
+  color: #0C5F4C;
+  font-weight: bold;
+}
+.greenLink:hover {
+  color: #063974;
+}
+.greenLink:focus {
+  color: #063974;
+}
+
+/********/
+/*HEADER*/
+/********/
 html.index header {
   background-image: url(/assets/home-image-1.jpg);
   background-size: cover;
@@ -445,25 +465,29 @@ html.index .heroTextContainer {
   padding-left: 12%;
   bottom: 0;
   left: 0;
+  -webkit-animation: fade1 3s;
+          animation: fade1 3s;
+}
+@-webkit-keyframes fade1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-html.index {
-  /**********************/
-  /*VISIT GUYANA SECTION*/
-  /**********************/
-  /*****************/
-  /*GALLERY SECTION*/
-  /*****************/
-  /***************/
-  /*ABOUT SECTION*/
-  /***************/
-  /*******************/
-  /*LOCATIONS SECTION*/
-  /*******************/
-  /*******************/
-  /*FREE TRIP SECTION*/
-  /*******************/
-}
+/***********************/
+/*STYLES FOR INDEX.HTML*/
+/***********************/
 html.index h2 {
   font-family: "Lato";
   font-weight: bold;
@@ -796,6 +820,9 @@ html.index .freeTripContainer {
   text-align: center;
 }
 
+/*************************/
+/*HEADER FOR CONTACT.HTML*/
+/*************************/
 html.contact h2 {
   line-height: 4rem;
 }
@@ -808,7 +835,7 @@ html.contact header {
   height: 80vh;
   width: 100%;
 }
-html.contact .heroTextContainer {
+html.contact .heroTextContainer1, html.contact .heroTextContainer2 {
   position: absolute;
   width: 100%;
   height: calc(80vh - 90px);
@@ -819,6 +846,24 @@ html.contact .heroTextContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
+  z-index: 3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html.contact .heroTextContainer1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: -320px;
+  left: -135px;
+}
+html.contact .heroTextContainer2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -826,11 +871,14 @@ html.contact .heroTextContainer {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  z-index: 3;
   bottom: 0;
   left: 0;
+  display: none;
 }
 
+/*************************/
+/*STYLES FOR CONTACT.HTML*/
+/*************************/
 html.contact h2 {
   line-height: 4rem;
 }
@@ -840,6 +888,7 @@ html.contact .feedbackContainer {
   display: flex;
   width: 100%;
   height: 450px;
+  position: relative;
 }
 html.contact .formAreaContainer {
   width: 55%;
@@ -911,10 +960,10 @@ html.contact .formAreaContainer .upperFormInput {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  gap: 50px;
+  gap: 30px;
 }
 html.contact .formAreaContainer .upperFormInput li {
-  width: 50%;
+  width: 100%;
 }
 html.contact .formAreaContainer .upperFormInput input {
   width: 100%;
@@ -999,135 +1048,9 @@ html.contact .addressLine {
   letter-spacing: 0.2rem;
 }
 
-@media (max-width: 1000px) {
-  html.contact h2 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    padding: 0;
-  }
-  html.contact .feedbackContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  html.contact .formAreaContainer {
-    width: 100%;
-    border: 2px solid #50E3C2;
-    margin-top: 50px;
-  }
-  html.contact .formAreaContainer form {
-    top: 0;
-    left: 0;
-    position: relative;
-  }
-  html.contact .addressContainer {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  html.contact .addressContainer ul {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  html.contact .socialMediaBar {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media (max-width: 800px) {
-  html.contact h2 {
-    font-size: 6.5rem;
-  }
-  html.contact form {
-    font-size: 1.8rem;
-  }
-  html.contact .upperFormInput {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 0px;
-  }
-  html.contact .upperFormInput li {
-    width: 100%;
-    margin: 10px 0;
-  }
-  form input::-webkit-input-placeholder {
-    font-size: 1.8rem;
-  }
-  form input::-moz-placeholder {
-    font-size: 1.8rem;
-  }
-  form input:-ms-input-placeholder {
-    font-size: 1.8rem;
-  }
-  form input::-ms-input-placeholder {
-    font-size: 1.8rem;
-  }
-  form input::placeholder, textarea {
-    font-size: 1.8rem;
-  }
-  .addressFirstLine {
-    font-size: 2.8rem;
-  }
-}
-@media (max-width: 480px) {
-  html.contact h2 {
-    font-size: 4.2rem;
-  }
-  html.contact .formAreaContainer {
-    border: none;
-  }
-  html.contact .formAreaContainer form {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    padding: 10px;
-  }
-  html.contact form input::-webkit-input-placeholder {
-    font-size: 1.7rem;
-  }
-  html.contact form input::-moz-placeholder {
-    font-size: 1.7rem;
-  }
-  html.contact form input:-ms-input-placeholder {
-    font-size: 1.7rem;
-  }
-  html.contact form input::-ms-input-placeholder {
-    font-size: 1.7rem;
-  }
-  html.contact form input::placeholder, html.contact textarea {
-    font-size: 1.7rem;
-  }
-}
+/**********************/
+/*HEADER FOR BLOG.HTML*/
+/**********************/
 html.blog header {
   background-image: url(/assets/blog-image-1.jpg);
   background-size: cover;
@@ -1137,7 +1060,7 @@ html.blog header {
   height: 80vh;
   width: 100%;
 }
-html.blog .heroTextContainer {
+html.blog .heroTextContainer1, html.blog .heroTextContainer2 {
   position: absolute;
   width: 100%;
   height: calc(80vh - 90px);
@@ -1148,6 +1071,24 @@ html.blog .heroTextContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
+  z-index: 3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html.blog .heroTextContainer1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: -130px;
+  left: 50px;
+}
+html.blog .heroTextContainer2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1155,15 +1096,26 @@ html.blog .heroTextContainer {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  z-index: 3;
   bottom: 0;
   left: 0;
+  display: none;
 }
 
+/**********************/
+/*STYLES FOR BLOG.HTML*/
+/**********************/
 html.blog .blogPost {
   position: relative;
   width: 100%;
   margin-bottom: -220px;
+}
+html.blog .blogPostSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: -220px;
 }
 html.blog aside {
   width: 40%;
@@ -1193,14 +1145,6 @@ html.blog .asideImageContainer img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-html.blog .blogPostSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-  top: -220px;
 }
 html.blog .mainSectionContainerBlog {
   width: 60%;
@@ -1234,18 +1178,9 @@ html.blog .blogTextContainer {
 html.blog .byline {
   font-style: italic;
   color: #063974;
-  line-height: 3.2rem;
-  margin-bottom: 3.5rem;
-}
-html.blog .commentDate {
-  font-weight: bold;
-  color: #063974;
   line-height: 2rem;
-  margin-bottom: 1.5rem;
-}
-html.blog .greenLink {
-  color: #0C5F4C;
-  font-weight: bold;
+  margin-bottom: 3.5rem;
+  margin-top: 10px;
 }
 html.blog .recentPosts {
   margin-top: 50px;
@@ -1258,10 +1193,31 @@ html.blog .recentPosts ul {
   letter-spacing: 0.2rem;
   color: #2C2C2C;
   padding-left: 30px;
-  list-style: disc;
+  list-style: none;
+}
+html.blog .recentPosts ul li {
+  width: 100%;
+  position: relative;
+  list-style: none;
+}
+html.blog .recentPosts ul li::before {
+  content: "•";
+  color: #50E3C2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  left: -20px;
 }
 html.blog .recentPosts ul a {
   color: #2C2C2C;
+}
+html.blog .recentPosts ul a:hover {
+  color: #0C5F4C;
+}
+html.blog .recentPosts ul a:focus {
+  color: #0C5F4C;
 }
 html.blog .comment {
   margin: 50px 0;
@@ -1289,8 +1245,14 @@ html.blog .commentPost {
   width: 100%;
   margin: 25px 0;
 }
+html.blog .commentDate {
+  font-weight: bold;
+  color: #063974;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
 html.blog .commenterPhoto {
-  width: 10%;
+  width: 15%;
 }
 html.blog .userComment {
   width: 85%;
@@ -1354,7 +1316,7 @@ html.blog .formAreaContainer form input::placeholder, html.blog .formAreaContain
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.blog .formAreaContainer .upperFormInput {
+html.blog .upperFormInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1364,16 +1326,16 @@ html.blog .formAreaContainer .upperFormInput {
   width: 100%;
   gap: 50px;
 }
-html.blog .formAreaContainer .upperFormInput li {
+html.blog .upperFormInput li {
   width: 50%;
 }
-html.blog .formAreaContainer .upperFormInput input {
+html.blog .upperFormInput input {
   width: 100%;
   border: none;
   border-bottom: 2px solid #50E3C2;
   padding: 10px;
 }
-html.blog .formAreaContainer .contactTextArea {
+html.blog .contactTextArea {
   width: 100%;
   height: 100%;
   border: 2px solid #50E3C2;
@@ -1381,10 +1343,13 @@ html.blog .formAreaContainer .contactTextArea {
   resize: none;
   padding: 10px;
 }
-html.blog .formAreaContainer .linkBox {
+html.blog .linkBox {
   width: 100%;
 }
 
+/**********************************/
+/*STYLES FOR BUTTON AND LINK BOXES*/
+/**********************************/
 .linkBox {
   font-family: "PlayfairDisplaySC";
   font-style: italic;
@@ -1394,6 +1359,8 @@ html.blog .formAreaContainer .linkBox {
   background-color: #063974;
   width: 250px;
   text-align: center;
+  z-index: 3;
+  cursor: pointer;
 }
 .linkBox:hover {
   background-color: #0C5F4C;
@@ -1409,7 +1376,8 @@ html.blog .formAreaContainer .linkBox {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.linkBox a {
+
+a {
   text-decoration: none;
   color: #FAFFFE;
   letter-spacing: 0.2rem;
@@ -1430,9 +1398,9 @@ footer p {
   color: #FAFFFE;
 }
 
-/************/
-/*INDEX.HTML*/
-/************/
+/******************************/
+/*MEDIA QUERIES FOR INDEX.HTML*/
+/******************************/
 @media (max-width: 1500px) {
   html.index .quadBoxContainer li {
     height: 400px;
@@ -1474,8 +1442,14 @@ footer p {
   html.index header {
     margin-bottom: 50px;
   }
+  html.index h2, html.index h3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
   html.index .heroTextContainer {
-    padding: 0 20px;
+    padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1639,6 +1613,387 @@ footer p {
     height: 500px;
   }
 }
+/********************************/
+/*MEDIA QUERIES FOR CONTACT.HTML*/
+/********************************/
+@media (max-width: 1000px) {
+  html.contact h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  html.contact .heroTextContainer1 {
+    display: none;
+  }
+  html.contact .heroTextContainer2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  html.contact .feedbackContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  html.contact .formAreaContainer {
+    width: 100%;
+    border: 2px solid #50E3C2;
+    margin-top: 50px;
+  }
+  html.contact .formAreaContainer form {
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  html.contact .upperFormInput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  html.contact .upperFormInput li {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  html.contact .addressContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  html.contact .addressContainer ul {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  html.contact .socialMediaBar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  html.contact h2 {
+    font-size: 6.5rem;
+  }
+  html.contact h3 {
+    line-height: 3.5rem;
+    text-align: center;
+  }
+  html.contact form {
+    font-size: 1.8rem;
+  }
+  html.contact form input::-webkit-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input::-moz-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input:-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input::-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.contact form input::placeholder, html.contact textarea {
+    font-size: 1.8rem;
+  }
+  html.contact .addressFirstLine {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 480px) {
+  html.contact h2 {
+    font-size: 4.2rem;
+  }
+  html.contact .formAreaContainer {
+    border: none;
+  }
+  html.contact .formAreaContainer form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px;
+  }
+  html.contact form input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input::-moz-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input:-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input::-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.contact form input::placeholder, html.contact textarea {
+    font-size: 1.7rem;
+  }
+}
+/*****************************/
+/*MEDIA QUERIES FOR BLOG.HTML*/
+/*****************************/
+@media (max-width: 1000px) {
+  html.blog .heroTextContainer1 {
+    display: none;
+  }
+  html.blog .heroTextContainer2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  html.blog h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  html.blog .blogPostSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+  }
+  html.blog .mainSectionContainerBlog {
+    width: 100%;
+    border: none;
+  }
+  html.blog .mainImageContainer {
+    display: none;
+  }
+  html.blog .blogTextContainer {
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    right: 0;
+    width: 85%;
+  }
+  html.blog aside {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html.blog .asideContainer {
+    margin: 50px auto;
+    width: 85%;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html.blog .asideImageContainer {
+    display: none;
+    padding-top: 300px;
+  }
+  html.blog .ourMission {
+    text-align: center;
+  }
+  html.blog .ourMission h4 {
+    margin-bottom: 10px;
+  }
+  html.blog .recentPosts {
+    margin: 50px auto;
+    text-align: center;
+  }
+  html.blog .recentPosts h4 {
+    margin-bottom: 10px;
+  }
+  html.blog .recentPosts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    list-style: inside;
+  }
+  html.blog .recentPosts ul li {
+    text-align: left;
+    width: 50%;
+    padding: 0px;
+  }
+  html.blog .comment {
+    margin-top: 200px;
+    margin-bottom: 0;
+  }
+  html.blog .commentContainer {
+    width: 100%;
+  }
+  html.blog .commentContainer h5 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  html.blog h2 {
+    font-size: 6.5rem;
+  }
+  html.blog h3 {
+    line-height: 3.5rem;
+    text-align: center;
+  }
+  html.blog .byline {
+    text-align: center;
+  }
+  html.blog form {
+    font-size: 1.8rem;
+  }
+  html.blog .upperFormInput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  html.blog .upperFormInput li {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.8rem;
+  }
+  html.blog form input::-webkit-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.blog form input::-moz-placeholder {
+    font-size: 1.8rem;
+  }
+  html.blog form input:-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.blog form input::-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  html.blog form input::placeholder, html.blog textarea {
+    font-size: 1.8rem;
+  }
+  html.blog .recentPosts {
+    margin: 50px auto;
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html.blog .recentPosts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  html.blog .recentPosts ul li {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  html.blog .addressFirstLine {
+    font-size: 2.8rem;
+  }
+  html.blog .commentDate {
+    line-height: 2.5rem;
+  }
+  html.blog .commenterPhoto {
+    width: 70px;
+  }
+  html.blog .userComment {
+    width: 85%;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 480px) {
+  html.blog h2 {
+    font-size: 4.2rem;
+  }
+  html.blog li {
+    font-size: 1.7rem;
+  }
+  html.blog .formAreaContainer {
+    border: none;
+  }
+  html.blog .formAreaContainer form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px;
+  }
+  html.blog form input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.blog form input::-moz-placeholder {
+    font-size: 1.7rem;
+  }
+  html.blog form input:-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.blog form input::-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  html.blog form input::placeholder, html.blog textarea {
+    font-size: 1.7rem;
+  }
+  html.blog .commentDate {
+    padding: 0 20px;
+  }
+  html.blog .commenterPhoto {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+  }
+  html.blog .userComment {
+    width: 75%;
+    padding-left: 10px;
+  }
+}
+/****************************************/
+/*GENERAL STYLES SHARED ACROSS ALL PAGES*/
+/****************************************/
 @media (max-width: 1000px) {
   nav {
     background-color: #0C5F4C;
@@ -1672,7 +2027,7 @@ footer p {
     background-color: #0C5F4C;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    z-index: 5;
+    z-index: 20;
   }
   .menu.active {
     right: 0;
@@ -1687,7 +2042,7 @@ footer p {
     text-align: center;
     color: #FAFFFE;
   }
-  /*hamburger menu*/
+  /*HAMBURGER MENU*/
   .hamburger {
     display: block;
   }

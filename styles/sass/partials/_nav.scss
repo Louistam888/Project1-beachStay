@@ -1,5 +1,9 @@
 @use "variables" as *;
 
+/*****/
+/*NAV*/
+/*****/
+
 h1 {
   font-family: $playfair;
   font-style:italic;
@@ -17,7 +21,6 @@ h1 {
       }
     }
 }
-
 
 .navContainer {
   display: flex; 
@@ -66,6 +69,5 @@ h1 {
     *transition: all 0.3s ease-in-out;
     background-color: $iceBlue;
   }
-
 }
 

@@ -1,5 +1,9 @@
 @use "../variables" as *;
 
+/********/
+/*HEADER*/
+/********/
+
 html.index {
 
   header {
@@ -35,5 +39,13 @@ html.index {
     padding-left: 12%;
     bottom: 0;
     left: 0;
+    animation: fade1 3s;
+  } 
+  
+  @keyframes fade1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
 }
+
+

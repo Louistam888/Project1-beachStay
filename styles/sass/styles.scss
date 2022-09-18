@@ -10,14 +10,17 @@
 
 @use "partials/contact/contactHeader";
 @use "partials/contact/contactSections";
-@use "partials/contact/contactMediaQueries";
+
 
 @use "partials/blog/blogHeader";
 @use "partials/blog/blogSections";
 
 @use "partials/links";
 @use "partials/footer";
+
 @use "partials/index/indexMediaQueries";
+@use "partials/contact/contactMediaQueries";
+@use "partials/blog/blogMediaQueries";
 @use "partials/generalMediaQueries";
 
 

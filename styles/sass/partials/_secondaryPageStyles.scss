@@ -1,10 +1,11 @@
 @use "variables" as *;
 
 /**********************************************************/
-/*GENERAL STYLES SHARED BY ALL PAGES OTHER THAN INDEX.HTML*/
+/*STYLES SHARED BY SECONDARY PAGES OTHER THAN INDEX.HTML*/
 /**********************************************************/
 
 html.contact, html.blog {
+
   h2 {
     color: $iceBlue;
     font-family: $lato;
@@ -46,6 +47,17 @@ h5 {
   line-height: 5.8rem;
   letter-spacing: 0.38rem;
   color: $black;
+}
+
+.greenLink {
+  color: $spruce;
+  font-weight: bold;
+  &:hover {
+    color: $twilightBlue;
+  }
+  &:focus {
+    color: $twilightBlue;
+  }
 }
 
 

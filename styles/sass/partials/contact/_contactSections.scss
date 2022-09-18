@@ -1,5 +1,9 @@
 @use "../variables" as *;
 
+/*************************/
+/*STYLES FOR CONTACT.HTML*/
+/*************************/
+
 html.contact {
 
   h2 {
@@ -10,6 +14,7 @@ html.contact {
     display: flex;
     width: 100%;
     height: 450px;
+    position: relative; 
     }
    
   .formAreaContainer {
@@ -17,7 +22,7 @@ html.contact {
     position: relative;
     margin-top: -220px;
     
-  
+    
     form {
       width: 100%;
       height: 600px;  
@@ -43,17 +48,17 @@ html.contact {
       display: flex;
       justify-content: space-evenly;
       width: 100%;
-      gap: 50px;
-    
+      gap: 30px;
+      
       li {
-        width: 50%;
+        width: 100%;
       }
     
       input {
         width: 100%;
         border: none;
         border-bottom: 2px solid $greenishCyan;
-        padding: 10px
+        padding: 10px;
       }  
     }
     
@@ -71,8 +76,6 @@ html.contact {
     }
   }
 
-  
-
   .addressContainer {
     width: 45%;
     display: flex;
@@ -80,7 +83,6 @@ html.contact {
     justify-content: center;
     align-items: center;
     padding-left: 80px;
-    
     
     ul {
       width: 100%; 

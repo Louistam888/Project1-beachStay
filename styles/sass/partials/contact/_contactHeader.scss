@@ -1,5 +1,9 @@
 @use "../variables" as *;
 
+/*************************/
+/*HEADER FOR CONTACT.HTML*/
+/*************************/
+
 html.contact {
 
   h2 {
@@ -16,18 +20,30 @@ html.contact {
     width: 100%; 
   }
 
-
-  .heroTextContainer {
+  .heroTextContainer1, .heroTextContainer2 {
     position: absolute;
     width: 100%;
     height: calc(80vh - 90px);
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    z-index: 3;
+    align-items: center;
+  }
+
+  .heroTextContainer1 {
+    flex-direction: column;
+    justify-content: flex-start;
+    top: -320px;
+    left: -135px;
+  }
+
+  .heroTextContainer2 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    z-index: 3;
     bottom: 0;
     left: 0;
+    display: none;
   }
 }

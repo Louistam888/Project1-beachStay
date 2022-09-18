@@ -12,13 +12,16 @@
     <div class="wrapper"> <!--wrapper start-->
       <div class="navContainer">
         <h1><a href="#">Beachstays</a></h1>
+
+<!-- NAV MENU -->
         <ul class="menu">
           <li><a href="./index.html" class="navLink">home</a></li>
-          <li><a href="#about" class="navLink">about</a></li>
-          <li><a href="#" class="navLink">blog</a></li>
+          <li><a href="./index.html#about" class="navLink">about</a></li>
+          <li><a href="./blog.html" class="navLink">blog</a></li>
           <li><a href="./contact.html" class="navLink">contact</a></li>
         </ul>
 
+<!-- HAMBURGER MENU -->
         <!--hamburger menu-->
         <div class="hamburger">
           <span class="bar"></span>
@@ -29,20 +32,28 @@
     </div> <!--wrapper end-->
   </nav>
 
-  <div class="heroTextContainer">
+<!-- H2 TEXT FOR SCREENS > 1000PX MAX WIDTH -->
+  <div class="heroTextContainer2">
     <h2>Get in touch</h2>
   </div>
 </header>
 <body>
   <main>
-    <section class="contact">
-      <div class="wrapper">
-        <div class="feedbackContainer">
 
-          <div class="formAreaContainer">
+<!-- CONTACT US FORM SECTION  -->
+    <section class="contact"> 
+      <div class="wrapper"> <!--contact wrapper start-->
+        <div class="feedbackContainer"> <!--feedback container start -->
+
+<!-- H2 TEXT FOR SCREENS < 1000PX MAX WIDTH -->
+          <div class="heroTextContainer1">
+            <h2>Get in touch</h2>
+          </div>
+
+<!-- CONTACT US FORM -->
+          <div class="formAreaContainer"> <!-- form container start -->
             <form action="#" method="post" name="contactUsForm">
-             
-              <ul class="upperFormInput">
+              <ul class="upperFormInput"><!--name and email input fields div start-->
                 <li>
                   <label for="name">
                     <span class="sr-only">Name</span>
@@ -55,17 +66,16 @@
                   </label>
                   <input type="email" id="email" name="contactUsForm" placeholder="Email address" required>
                 </li>  
-              </ul>              
+              </ul><!--name and email input fields div end-->
               <textarea name="contactUsForm" id="textarea" cols="30" rows="30" class="contactTextArea" placeholder="Message"></textarea>
-            
               <button class="linkBox">
                 <a href="#">SUBMIT</a>
               </button>
             </form>
-          </div>
-         
-          <div class="addressContainer">
-           
+          </div> <!-- form container end -->
+
+<!-- ADDRESS INFORMATION CONTAINER  -->
+          <div class="addressContainer"> <!--address container start-->
             <ul>
               <li class="socialMediaBar">
                 <a href="#"><i class="fa-brands fa-facebook-f fa-3x" aria-hidden="true"><span class="sr-only">Facebook</span></i></a>
@@ -80,16 +90,19 @@
               <li class="addressLine">Toronto, Ontario</li>
               <li class="addressLine">M5V2D5</li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </div><!--address container end -->
+        </div> <!-- feedback container end -->
+      </div> <!-- contact wrapper end-->
     </section>
-
   </main>
 </body>
+
+<!-- FOOTER -->
 <footer>
   <p>Copyright © 2019 HackerYou</p>
 </footer>
+
+<!--JAVASCRIPT FOR FONT AWESOME AND HAMBURGER MENU -->
 <script src="https://kit.fontawesome.com/2d0137e58f.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </html>

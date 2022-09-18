@@ -8,28 +8,31 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <header>
+
+<!-- NAV MENU -->
   <nav>
     <div class="wrapper"> 
       <div class="navContainer">
         <h1><a href="#">Beachstays</a></h1>
         <ul class="menu">
           <li><a href="./index.html" class="navLink">home</a></li>
-          <li><a href="#about" class="navLink">about</a></li>
-          <li><a href="#" class="navLink">blog</a></li>
+          <li><a href="./index.html#about" class="navLink">about</a></li>
+          <li><a href="./blog.html" class="navLink">blog</a></li>
           <li><a href="./contact.html" class="navLink">contact</a></li>
         </ul>
 
-        <!--hamburger menu-->
+<!-- HAMBURGER MENU -->
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
       </div>
-    </div> <!-- nav wrapper end --> 
+    </div> 
   </nav>
 
-  <div class="heroTextContainer">
+<!-- H2 TEXT FOR SCREENS > 1000PX MAX WIDTH -->
+  <div class="heroTextContainer2">
     <h2>Blog</h2>
   </div>
 </header>
@@ -37,12 +40,18 @@
   <main>
     <section class="blogPost">
       <div class="blogPostSection">
-        <div class="mainSectionContainerBlog">
+        <div class="mainSectionContainerBlog"><!--main section container div start-->
+
+<!-- H2 TEXT FOR SCREENS < 1000PX MAX WIDTH -->
+          <div class="heroTextContainer1">
+            <h2>Blog</h2>
+          </div>
+
+<!-- BLOG POST SECTION -->
           <div class="mainImageContainer">
             <img src="assets/post-image.jpg" alt="A wooden walkwya leads up to the front door of a beachfront cottage at night.">
           </div>
-              
-          <div class="blogTextContainer">
+          <div class="blogTextContainer"><!--blog text  container div start-->
             <h3>Five days of ocean seas</h3>
             <p class="byline">Monday, January 21st by <strong>Bora</strong></p>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod, nulla doloribus sint architecto animi harum illo labore in repellendus error cumque eveniet, odit beatae quae illum culpa facilis ratione officiis delectus consequatur voluptatibus? Et consectetur voluptatem, non quaerat nihil porro cum assumenda, corporis asperiores pariatur ducimus est tempore nesciunt? 
@@ -54,16 +63,17 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ullam harum fugiat, illum expedita eos ex tempore? Sapiente provident explicabo omnis cupiditate. Itaque, voluptatem distinctio voluptate ducimus, praesentium error placeat quasi dicta laborum, rem officiis!
             </p>
           </div> <!-- blog text container div end-->
-        </div> <!-- main section blog div end -->
+        </div> <!-- main section container div end -->
 
         <aside>
-          <div class="asideContainer">
-            <div class="asideImageContainer">
-              <img src="./assets/sidebar-image.jpg" alt="A beachfront view of a cottage from the shoreline.">
+          <div class="asideContainer"><!--aside container div start-->
+            <div class="ourMission">
+              <div class="asideImageContainer">
+                <img src="./assets/sidebar-image.jpg" alt="A beachfront view of a cottage from the shoreline.">
+              </div>
+              <h4>Our mission</h4>
+              <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, era a elementum. <a href="#" class="greenLink">Find out more</a></p>
             </div>
-            <h4>Our mission</h4>
-            <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, era a elementum. <a href="#" class="greenLink">Find out more</a></p>
-  
             <div class="recentPosts">
               <h4>Recent posts</h4>
               <ul>
@@ -73,23 +83,18 @@
                 <li><a href="#">Scelerisque nec pharetra</a></li>
               </ul>
             </div>
+          </div><!--aside container div end-->
         </aside>
       </div>
-
-
     </section>
 
-
-
+<!-- COMMENT SECTION -->
     <section class="comment">
-      <div class="commentsSection">
-        <div class="wrapper">
-
-
-          <div class="commentContainer">
+      <div class="commentsSection"><!--comments section div start-->
+        <div class="wrapper"><!--comment wrapper start-->
+          <div class="commentContainer"><!--comment container start-->
             <h5>Comments</h5>
-          
-            <div class="commentPost">
+            <div class="commentPost"><!--comment post #1 container start-->
               <div class="commenterPhoto">
                 <img src="./assets/comment-image.jpg" alt="display photo for user Reyansh">
               </div>
@@ -97,9 +102,8 @@
                 <p class="commentDate">Tuesday October 9th, 2019 by Reyansh</p>
                 <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed dollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu variusrisus.</p>
               </div>
-            </div>
-
-            <div class="commentPost">
+            </div><!--comment post #1 container end-->
+            <div class="commentPost"><!--comment post #2 container start-->
               <div class="commenterPhoto">
                 <img src="./assets/comment-image2.jpg" alt="display photo for user Olivia">
               </div>
@@ -107,44 +111,43 @@
                 <p class="commentDate">Wednesday, October 10th, 2019 by Olivia</p>
                 <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
               </div>
-            </div>
+            </div><!--comment post #2 container end-->
 
-          <!-- </div> -->
-
-          
-              <div class="formAreaContainer">
-                <form action="#" method="post" name="contactUsForm">
-                
-                  <ul class="upperFormInput">
-                    <li>
-                      <label for="name">
-                        <span class="sr-only">Name</span>
-                      </label>
-                      <input type="text" id="name" name="contactUsForm" placeholder="Name" required>
-                    </li>
-                    <li>
-                      <label for="email address">
-                        <span class="sr-only">Email address</span>
-                      </label>
-                      <input type="email" id="email" name="contactUsForm" placeholder="Email address" required>
-                    </li>  
-                  </ul>              
-                  <textarea name="contactUsForm" id="textarea" cols="30" rows="30" class="contactTextArea" placeholder="Comment"></textarea>
-                
-                  <button class="linkBox">
-                    <a href="#">POST COMMENT</a>
-                  </button>
-                </form>
-              </div>
-          
-        </div>
-      </div>
+<!-- FEEDBACK FORM  -->
+            <div class="formAreaContainer"><!-- form area container start-->
+              <form action="#" method="post" name="comments">
+                <ul class="upperFormInput">
+                  <li>
+                    <label for="name">
+                      <span class="sr-only">Name</span>
+                    </label>
+                    <input type="text" id="name" name="comments" placeholder="Name" required>
+                  </li>
+                  <li>
+                    <label for="email address">
+                      <span class="sr-only">Email address</span>
+                    </label>
+                    <input type="email" id="email" name="comments" placeholder="Email address" required>
+                  </li>  
+                </ul>              
+                <textarea name="comments" id="textarea" cols="30" rows="30" class="contactTextArea" placeholder="Comment"></textarea>
+                <button class="linkBox">
+                  <a href="#">POST COMMENT</a>
+                </button>
+              </form>
+            </div><!-- form area container end-->
+          </div><!-- comment container end -->
+        </div><!--comment wrapper end-->
+      </div><!--comments section div end-->
     </section>
   </main>
 </body>
 
+<!-- FOOTER -->
 <footer>
   <p>Copyright © 2019 HackerYou</p>
 </footer>
+
+<!--JAVASCRIPT FOR FONT AWESOME AND HAMBURGER MENU -->
 <script src="script.js"></script>
 </html>

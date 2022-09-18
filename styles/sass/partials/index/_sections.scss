@@ -1,5 +1,8 @@
 @use "../variables" as *;
 
+/***********************/
+/*STYLES FOR INDEX.HTML*/
+/***********************/
 
 html.index {
 
@@ -48,20 +51,14 @@ html.index {
   }
 
   
-h6 {
-  font-family: $lato;
-  font-weight: bold; 
-  font-size: 3.5rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.38rem;
-  color: $twilightBlue;
-}
-  
-
-
-  /**********************/
-  /*VISIT GUYANA SECTION*/
-  /**********************/
+  h6 {
+    font-family: $lato;
+    font-weight: bold; 
+    font-size: 3.5rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.38rem;
+    color: $twilightBlue;
+  }
 
   .visitGuyana {
     padding-bottom: 100px; 
@@ -85,18 +82,13 @@ h6 {
     width: 30%;
     position: relative;    
 
-    img {
-      position: absolute;
-      bottom: 20px;
-      right: 0;
-      box-shadow: -20px 20px $greenishCyan;
-    
+  img {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    box-shadow: -20px 20px $greenishCyan; 
     };
   }
-
-  /*****************/
-  /*GALLERY SECTION*/
-  /*****************/
 
   .gallery {
     background-color: $lightLightBlue;
@@ -142,25 +134,21 @@ h6 {
       color: white;
       font-size: 7rem;
       }
-    
-    &:hover {
-      opacity: 0.8;
-      transition: 0.5s ease;
       
-    }
+      &:hover {
+        opacity: 0.8;
+        transition: 0.5s ease;
+      }
 
-    &:focus {
-      opacity: 0.8;
-      transition: 0.5s ease;
-      font-family: $lato;
-      font-weight: bold;
-      color: white;
-    }
+      &:focus {
+        opacity: 0.8;
+        transition: 0.5s ease;
+        font-family: $lato;
+        font-weight: bold;
+        color: white;
+      }
   }
 
-  /***************/
-  /*ABOUT SECTION*/
-  /***************/
 
   h5 {
     position: relative;
@@ -214,15 +202,12 @@ h6 {
       li:nth-child(3) h5::before {
         content: "\f15b";
       }
+
       li:nth-child(4) h5::before {
         content: "\f879";
       }
     }
   }
-
-  /*******************/
-  /*LOCATIONS SECTION*/
-  /*******************/
 
   .locations {
     background-color: $lightLightBlue;
@@ -244,12 +229,7 @@ h6 {
       height: 100%;
       object-fit: cover;
       object-position:center;
-    
     }
-
-    
-
-  
   }
 
   .locationImgContainer1, .locationImgContainer4 {
@@ -299,10 +279,10 @@ h6 {
     align-items: right;
     padding-left: 27%;
 
-      .linkBox {
-        margin-right: 0;
-        margin-left: auto;
-      }
+    .linkBox {
+      margin-right: 0;
+      margin-left: auto;
+    }
   }
 
   .quadBoxHero {
@@ -313,12 +293,7 @@ h6 {
       object-position: center;
       width: 100%;
     }
-
   }
-
-  /*******************/
-  /*FREE TRIP SECTION*/
-  /*******************/
 
   .freeTrip {
     background-color: $iceBlue;
