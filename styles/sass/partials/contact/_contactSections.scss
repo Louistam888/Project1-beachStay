@@ -96,6 +96,8 @@ html.contact {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 8px;
+    z-index: 5;
+    
     i {
       width: 50px;
       height: 100%;
@@ -108,7 +110,15 @@ html.contact {
 
     a {
       text-decoration-style: none;
-      color: black;
+      color: $black;
+
+      &:hover {
+        color: $twilightBlue;
+      }
+
+      &:focus {
+        color: $twilightBlue;
+      }
     }
   }
 
@@ -119,6 +129,19 @@ html.contact {
     line-height: 5.8rem;
     letter-spacing: 0.38rem;
     padding-bottom: 20px;
+    z-index: 5;
+
+      a { 
+        color: $black;
+
+        &:hover {
+          color: $twilightBlue;
+        }
+
+        &:focus {
+          color: $twilightBlue;
+        }
+      }
   }
 
   .addressLine {

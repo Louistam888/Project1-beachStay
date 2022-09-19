@@ -1018,6 +1018,7 @@ html.contact .socialMediaBar {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 8px;
+  z-index: 5;
 }
 html.contact .socialMediaBar i {
   width: 50px;
@@ -1030,7 +1031,13 @@ html.contact .socialMediaBar i:nth-child(1) {
 html.contact .socialMediaBar a {
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
-  color: black;
+  color: #2C2C2C;
+}
+html.contact .socialMediaBar a:hover {
+  color: #063974;
+}
+html.contact .socialMediaBar a:focus {
+  color: #063974;
 }
 html.contact .addressFirstLine {
   font-family: "Lato";
@@ -1039,6 +1046,16 @@ html.contact .addressFirstLine {
   line-height: 5.8rem;
   letter-spacing: 0.38rem;
   padding-bottom: 20px;
+  z-index: 5;
+}
+html.contact .addressFirstLine a {
+  color: #2C2C2C;
+}
+html.contact .addressFirstLine a:hover {
+  color: #063974;
+}
+html.contact .addressFirstLine a:focus {
+  color: #063974;
 }
 html.contact .addressLine {
   font-family: "Lato";
