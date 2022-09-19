@@ -21,6 +21,7 @@ html.contact {
     width: 55%;
     position: relative;
     margin-top: -220px;
+    z-index: 3;
     
     
     form {
@@ -33,7 +34,6 @@ html.contact {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      z-index: 3;
     } 
   
     form input::placeholder, textarea{

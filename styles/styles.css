@@ -894,6 +894,7 @@ html.contact .formAreaContainer {
   width: 55%;
   position: relative;
   margin-top: -220px;
+  z-index: 3;
 }
 html.contact .formAreaContainer form {
   width: 100%;
@@ -915,7 +916,6 @@ html.contact .formAreaContainer form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 3;
 }
 html.contact .formAreaContainer form input::-webkit-input-placeholder {
   font-family: "Lato";
