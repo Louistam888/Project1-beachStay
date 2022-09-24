@@ -15,6 +15,10 @@
   text-align: center;
   z-index: 3;
   cursor:pointer;
+  text-decoration: none;
+  color: $iceBlue;
+  letter-spacing: 0.2rem;  
+
     &:hover {
       background-color: $spruce;
       cursor: pointer;

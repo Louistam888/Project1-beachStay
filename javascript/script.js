@@ -1,16 +1,20 @@
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 
-hamburger.addEventListener("click", () => { 
+const hamburgerToggle = () => {
   hamburger.classList.toggle("active");
   menu.classList.toggle("active");
-});
+}
 
-document.querySelectorAll(".navLink").forEach(menuLi => menuLi.addEventListener("click", () => {
+const closeHamburgerOnClick = () => {
   hamburger.classList.remove("active");
   menu.classList.remove("active");
-}));
+}
 
+hamburger.addEventListener("click", hamburgerToggle);
+document.querySelectorAll(".navLink").forEach(menuLi => menuLi.addEventListener("click", closeHamburgerOnClick));
 
 /*created using the javascript hamburger menu tutorial on youTube by codefoxx
 https://www.youtube.com/watch?v=flItyHiDm7E*/
+
+

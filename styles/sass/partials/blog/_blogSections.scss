@@ -142,26 +142,83 @@ html.blog {
     flex-direction: column;
   }
 
-  .commentPost {
-    display: flex; 
-    width: 100%;
-    margin: 25px 0;
+  .commentDate, .commentName {
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .commentName {
+    color: $spruce;
+    margin-bottom: 0.5rem;
   }
 
   .commentDate {
-    font-weight: bold;
     color: $twilightBlue;
-    line-height: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .commenterPhoto {
-    width: 15%;
+  .commentsPosted {
+    width: 100%;
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 35px;
+    }
   }
 
-  .userComment {
-    width: 85%;
-    padding-left: 50px;
+  // .accordionItem {
+  //   border: 2px solid red;
+  // }
+
+  .accordionItemHeader {
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: $spruce;
+    display: flex;
+    align-items: center;
+      h5 {
+        color: $iceBlue;
+      }
+  }
+
+
+  .accordionItemHeader::after, .accordionItemHeader.active::after {
+    font-size: 3.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%; 
+    padding: 0 10px;
+    color: $iceBlue;
+  }
+
+  .accordionItemHeader::after {
+    content: "\25BC";
+  }
+
+  .accordionItemHeader.active::after {
+    content: "\25B2";   
+  }
+  
+  .accordionContent {
+    padding: 10px;
+  }
+
+  .accordionItemBody {
+    max-height: 0;
+    overflow: hidden;
+    border: 1px $spruce solid;
+    padding: 0;
+    // transition: max-height 0.5s ease-out;
+  }
+
+  .accordionItemHeader.active + .accordionItemBody {
+    max-height: 100%; 
   }
 
   .formAreaContainer {
@@ -179,7 +236,7 @@ html.blog {
       margin: 100px 0;
     } 
   
-    form input::placeholder, textarea{
+    form input::placeholder, textarea, input{
       font-family: $lato;
       font-size: 2rem;
       font-weight: light;

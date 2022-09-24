@@ -43,7 +43,7 @@
 <!-- CONTACT US FORM SECTION  -->
     <section class="contact"> 
       <div class="wrapper"> <!--contact wrapper start-->
-        <div class="feedbackContainer"> <!--feedback container start -->
+        <div class="feedbackContainerContact"> <!--feedback container start -->
 
 <!-- H2 TEXT FOR SCREENS < 1000PX MAX WIDTH -->
           <div class="heroTextContainer1">
@@ -51,9 +51,9 @@
           </div>
 
 <!-- CONTACT US FORM -->
-          <div class="formAreaContainer"> <!-- form container start -->
-            <form action="#" method="post" name="contactUsForm">
-              <ul class="upperFormInput"><!--name and email input fields div start-->
+          <div class="formAreaContainerContact"> <!-- form container start -->
+            <form action="#" method="post" name="contactUsForm" class="formContact">
+              <ul class="upperFormInputContact"><!--name and email input fields div start-->
                 <li>
                   <label for="name">
                     <span class="sr-only">Name</span>
@@ -68,8 +68,8 @@
                 </li>  
               </ul><!--name and email input fields div end-->
               <textarea name="contactUsForm" id="textarea" cols="30" rows="30" class="contactTextArea" placeholder="Message"></textarea>
-              <button class="linkBox">
-                <a href="#">SUBMIT</a>
+              <button class="linkBox" type="submit" value="submit">
+                SUBMIT
               </button>
             </form>
           </div> <!-- form container end -->
@@ -95,6 +95,12 @@
       </div> <!-- contact wrapper end-->
     </section>
   </main>
+
+<!--JAVASCRIPT FOR FONT AWESOME AND HAMBURGER MENU -->
+<script src="https://kit.fontawesome.com/2d0137e58f.js" crossorigin="anonymous"></script>
+<script src="./javascript/script.js"></script>
+<script src="./javascript/contact.js"></script>
+
 </body>
 
 <!-- FOOTER -->
@@ -102,7 +108,4 @@
   <p>Copyright © 2019 HackerYou</p>
 </footer>
 
-<!--JAVASCRIPT FOR FONT AWESOME AND HAMBURGER MENU -->
-<script src="https://kit.fontawesome.com/2d0137e58f.js" crossorigin="anonymous"></script>
-<script src="script.js"></script>
 </html>
