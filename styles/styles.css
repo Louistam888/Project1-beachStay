@@ -1339,8 +1339,45 @@ html.blog .accordionItemBody {
   border: 1px #0C5F4C solid;
   padding: 0;
 }
-html.blog .accordionItemHeader.active + .accordionItemBody {
-  max-height: 100%;
+@-webkit-keyframes stretch {
+  0% {
+    max-height: 0;
+  }
+  20% {
+    max-height: 20%;
+  }
+  40% {
+    max-height: 40%;
+  }
+  60% {
+    max-height: 60%;
+  }
+  80% {
+    max-height: 80%;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
+@keyframes stretch {
+  0% {
+    max-height: 0;
+  }
+  20% {
+    max-height: 20%;
+  }
+  40% {
+    max-height: 40%;
+  }
+  60% {
+    max-height: 60%;
+  }
+  80% {
+    max-height: 80%;
+  }
+  100% {
+    max-height: 100%;
+  }
 }
 html.blog .formAreaContainer {
   width: 100%;

@@ -15,8 +15,9 @@ form.addEventListener("submit", (event) => {
     const userComment = commenterComment.value;
 
     const dateTime = luxon.DateTime;
-    const localTime = dateTime.local();
+    const localTime = dateTime.fromObject();
     const formattedTime = localTime.toLocaleString({year:"numeric", month:"short", weekday: "long", day:"numeric", hour12:true, hour: "numeric", minute:"2-digit"});
+
 
     const placeholderComment = document.querySelector(".placeholderComment")
     placeholderComment.style.display = "none";
@@ -41,7 +42,7 @@ form.addEventListener("submit", (event) => {
 })
 
 
-//ACCORDION FOR COMMENTS SECTION
+// ACCORDION FOR COMMENTS SECTION
 
 
 const accordionItemHeader = document.querySelector(".accordionItemHeader");
@@ -49,17 +50,11 @@ const accordionItemHeader = document.querySelector(".accordionItemHeader");
   accordionItemHeader.addEventListener("click", event => {
   accordionItemHeader.classList.toggle("active");
 
-  const accordionItemBody = document.queryselector(".accordionItemBody");
+  const accordionItemBody = document.querySelector(".accordionItemBody");
 
     if (accordionItemHeader.classList.contains("active")) {
-      
-      const updateHeight = () => {
-      accordionItemBody.style.maxHeight = updatedScrollHeight;  
-      }
-      updateHeight();
+      accordionItemBody.style.setProperty("max-height", "100%");
     } else {
-      accordionItemBody.style.maxHeight = 0;
+      accordionItemBody.style.setProperty("max-height", "0");
     }
   })
-
-
