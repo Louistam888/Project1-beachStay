@@ -43,23 +43,16 @@ form.addEventListener("submit", (event) => {
 
 //ACCORDION FOR COMMENTS SECTION
 
+
 const accordionItemHeader = document.querySelector(".accordionItemHeader");
-  accordionItemHeader.addEventListener("click", () => {
-    accordionItemHeader.classList.toggle("active");
-    const accordionItemBody = accordionItemHeader.nextElementSibling;
+ 
+  accordionItemHeader.addEventListener("click", event => {
+  accordionItemHeader.classList.toggle("active");
 
-    const scrollHeight = accordionItemBody.scrollHeight;
-    let updatedScrollHeight; 
-
-    const retrieveScrollHeight = () => { 
-      updatedScrollHeight = scrollHeight + "px";
-    }
-
-    retrieveScrollHeight();
-    accordionItemBody.load();
+  const accordionItemBody = document.queryselector(".accordionItemBody");
 
     if (accordionItemHeader.classList.contains("active")) {
-
+      
       const updateHeight = () => {
       accordionItemBody.style.maxHeight = updatedScrollHeight;  
       }
@@ -70,13 +63,3 @@ const accordionItemHeader = document.querySelector(".accordionItemHeader");
   })
 
 
-  // const accordionItemBody = accordionItemHeader.nextElementSibling;
-
-  //   const scrollHeight = accordionItemBody.scrollHeight;
-
-  //   if (accordionItemHeader.classList.contains("active")) {
-    
-  //     accordionItemBody.style.maxHeight = scrollHeight + "px";  
-  //   } else {
-  //     accordionItemBody.style.maxHeight = 0;
-  //   }
