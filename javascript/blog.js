@@ -47,7 +47,7 @@ form.addEventListener("submit", (event) => {
 
 const accordionItemHeader = document.querySelector(".accordionItemHeader");
  
-  accordionItemHeader.addEventListener("click", event => {
+  accordionItemHeader.addEventListener("click", () => {
   accordionItemHeader.classList.toggle("active");
 
   const accordionItemBody = document.querySelector(".accordionItemBody");
