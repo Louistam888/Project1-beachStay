@@ -26,7 +26,7 @@
   @media (max-width: 1250px) {
     html.index {
       
-      h3 {
+      .h2Span {
         font-size: 9rem;
       }
 
@@ -66,9 +66,10 @@
         margin-bottom: 50px;
       }
 
-      h2, h3 {
+      h2, .h2Span {
         justify-content: center;
-        padding-left: 0;
+        text-align: center;
+        padding: 15px 10px;
       }
 
       .heroTextContainer {
@@ -132,18 +133,18 @@
         line-height: 3rem;
       }
     
-      h3 {
+      .h2Span {
         font-size: 6rem;
         margin: 0;
       }
     
-      h4 {
+      h3 {
         font-size: 3rem;
         line-height: 4rem;
         padding-bottom: 20px;
       }
     
-      h5 {
+      h4 {
         font-size: 3rem;
       }
     
@@ -229,11 +230,11 @@
       line-height: 1.8rem;
     }
   
-    h3 {
+    .h2Span {
       font-size: 3.8rem;
     }
   
-    h4, h5 {
+    h3, h4 {
       font-size: 2.8rem;
       text-align: center;
     }
@@ -248,7 +249,7 @@
       }
     }
 
-    li h5::before {
+    li h4::before {
       display: none;
     }
 

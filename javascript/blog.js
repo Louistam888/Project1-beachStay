@@ -18,7 +18,6 @@ form.addEventListener("submit", (event) => {
     const localTime = dateTime.fromObject();
     const formattedTime = localTime.toLocaleString({year:"numeric", month:"short", weekday: "long", day:"numeric", hour12:true, hour: "numeric", minute:"2-digit"});
 
-
     const placeholderComment = document.querySelector(".placeholderComment")
     placeholderComment.style.display = "none";
 
@@ -31,7 +30,7 @@ form.addEventListener("submit", (event) => {
     `<div class="userComment">
       <p class="commentName">${userName}</p>
       <p class="commentDate">${formattedTime}</p>
-      <p>${userComment}</p>
+      <p class= "userComment">${userComment}</p>
     </div>`
     submittedComment.appendChild(commentBox);
 

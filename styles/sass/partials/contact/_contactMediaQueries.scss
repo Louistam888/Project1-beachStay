@@ -28,13 +28,14 @@
 
     .formAreaContainerContact {
       width: 100%;
-      border: 2px solid $greenishCyan;
+      
       margin-top: 50px;
 
       .formContact {
         top: 0;
         left: 0;
         position: relative;
+        border: 2px solid $greenishCyan;
       }
     }
 
@@ -118,7 +119,8 @@
   
       .formContact {
         box-shadow: none;
-        padding: 10px;
+        padding: 10px; 
+        border: none;
       }
     }
 

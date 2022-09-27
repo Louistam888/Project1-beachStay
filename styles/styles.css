@@ -498,13 +498,11 @@ html.index h2 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   padding-left: 20%;
   color: #0C5F4C;
 }
-html.index h3 {
+html.index .h2Span {
   font-size: 11.12rem;
   font-family: "PlayfairDisplaySC";
   font-weight: italic;
@@ -517,10 +515,9 @@ html.index h3 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  padding-left: 20%;
   margin: 30px 0;
 }
-html.index h4 {
+html.index h3 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 3.5rem;
@@ -528,7 +525,7 @@ html.index h4 {
   letter-spacing: 0.38rem;
   color: #0C5F4C;
 }
-html.index h5 {
+html.index h4 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 3rem;
@@ -536,7 +533,7 @@ html.index h5 {
   letter-spacing: 0.32rem;
   color: #0C5F4C;
 }
-html.index h6 {
+html.index h5 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 3.5rem;
@@ -642,10 +639,10 @@ html.index .photoHover:focus {
   font-weight: bold;
   color: white;
 }
-html.index h5 {
+html.index h4 {
   position: relative;
 }
-html.index h5::before {
+html.index h4::before {
   font-family: "Font Awesome 5 Free";
   font-size: 2.5rem;
   position: absolute;
@@ -689,16 +686,16 @@ html.index .about ul li {
   padding-right: 15px;
   padding-left: 80px;
 }
-html.index .about ul li:nth-child(1) h5::before {
+html.index .about ul li:nth-child(1) h4::before {
   content: "\e3af";
 }
-html.index .about ul li:nth-child(2) h5::before {
+html.index .about ul li:nth-child(2) h4::before {
   content: "\e533";
 }
-html.index .about ul li:nth-child(3) h5::before {
+html.index .about ul li:nth-child(3) h4::before {
   content: "\f15b";
 }
-html.index .about ul li:nth-child(4) h5::before {
+html.index .about ul li:nth-child(4) h4::before {
   content: "\f879";
 }
 html.index .locations {
@@ -1339,46 +1336,6 @@ html.blog .accordionItemBody {
   border: 1px #0C5F4C solid;
   padding: 0;
 }
-@-webkit-keyframes stretch {
-  0% {
-    max-height: 0;
-  }
-  20% {
-    max-height: 20%;
-  }
-  40% {
-    max-height: 40%;
-  }
-  60% {
-    max-height: 60%;
-  }
-  80% {
-    max-height: 80%;
-  }
-  100% {
-    max-height: 100%;
-  }
-}
-@keyframes stretch {
-  0% {
-    max-height: 0;
-  }
-  20% {
-    max-height: 20%;
-  }
-  40% {
-    max-height: 40%;
-  }
-  60% {
-    max-height: 60%;
-  }
-  80% {
-    max-height: 80%;
-  }
-  100% {
-    max-height: 100%;
-  }
-}
 html.blog .formAreaContainer {
   width: 100%;
 }
@@ -1537,7 +1494,7 @@ footer p {
   }
 }
 @media (max-width: 1250px) {
-  html.index h3 {
+  html.index .h2Span {
     font-size: 9rem;
   }
   html.index .freeTrip {
@@ -1566,11 +1523,12 @@ footer p {
   html.index header {
     margin-bottom: 50px;
   }
-  html.index h2, html.index h3 {
+  html.index h2, html.index .h2Span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 0;
+    text-align: center;
+    padding: 15px 10px;
   }
   html.index .heroTextContainer {
     padding: 0;
@@ -1622,16 +1580,16 @@ footer p {
     font-size: 3rem;
     line-height: 3rem;
   }
-  html.index h3 {
+  html.index .h2Span {
     font-size: 6rem;
     margin: 0;
   }
-  html.index h4 {
+  html.index h3 {
     font-size: 3rem;
     line-height: 4rem;
     padding-bottom: 20px;
   }
-  html.index h5 {
+  html.index h4 {
     font-size: 3rem;
   }
   html.index .gallery ul {
@@ -1708,10 +1666,10 @@ footer p {
     font-size: 2.5rem;
     line-height: 1.8rem;
   }
-  html.index h3 {
+  html.index .h2Span {
     font-size: 3.8rem;
   }
-  html.index h4, html.index h5 {
+  html.index h3, html.index h4 {
     font-size: 2.8rem;
     text-align: center;
   }
@@ -1721,7 +1679,7 @@ footer p {
   html.index .gallery ul li {
     height: 100%;
   }
-  html.index li h5::before {
+  html.index li h4::before {
     display: none;
   }
   html.index .about {
@@ -1765,13 +1723,13 @@ footer p {
   }
   html.contact .formAreaContainerContact {
     width: 100%;
-    border: 2px solid #50E3C2;
     margin-top: 50px;
   }
   html.contact .formAreaContainerContact .formContact {
     top: 0;
     left: 0;
     position: relative;
+    border: 2px solid #50E3C2;
   }
   html.contact .upperFormInputContact {
     display: -webkit-box;
@@ -1868,6 +1826,7 @@ footer p {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 10px;
+    border: none;
   }
   html.contact .formContact input::-webkit-input-placeholder {
     font-size: 1.7rem;
@@ -2099,6 +2058,12 @@ footer p {
     font-size: 1.7rem;
   }
   html.blog .commentDate, html.blog .commentName {
+    padding: 0 20px;
+  }
+  html.blog .commentDate {
+    margin-bottom: 0;
+  }
+  html.blog .userComment {
     padding: 0 20px;
   }
 }

@@ -107,7 +107,7 @@
                     <ul class="commentsPosted">
                       <!--dynamic comments posted go here-->
                       <li class="placeholderComment">
-                        <p>No comments yet</p>
+                        <p class ="userComment">No comments yet</p>
                       </li>
                     </ul>    
                   </div><!--accordionContent div end -->
@@ -126,12 +126,15 @@
                     <input type="text" id="name" name="comments" placeholder="Name" required>
                   </li>
                   <li>
-                    <label for="email address">
+                    <label for="email">
                       <span class="sr-only">Email address</span>
                     </label>
                     <input type="email" id="email" name="comments" placeholder="Email address" required>
                   </li>  
                 </ul>              
+                <label for="comments">
+                  <span class="sr-only">Comments</span>
+                </label>
                 <textarea name="comments" id="textarea" cols="30" rows="30" class="contactTextArea" placeholder="Comment" required></textarea>
                 <button class="linkBox" type="submit" value="submit">
                   POST COMMENT

@@ -203,6 +203,14 @@
     .commentDate, .commentName {
        padding: 0 20px;
     }
-  
+
+    .commentDate {
+      margin-bottom: 0;
+    }
+
+    .userComment {
+      padding: 0 20px;
+    
+    }
   }
 }
