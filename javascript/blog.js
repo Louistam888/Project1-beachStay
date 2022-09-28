@@ -57,3 +57,5 @@ const accordionItemHeader = document.querySelector(".accordionItemHeader");
       accordionItemBody.style.setProperty("max-height", "0");
     }
   })
+
+  //accordion menu build based on YouTube tutorial by Coding Journey https://www.youtube.com/watch?v=dr8Emho-kYo
