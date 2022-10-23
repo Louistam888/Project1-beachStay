@@ -10,23 +10,23 @@ html.contact {
     line-height: 4rem;
   }
 
-  .feedbackContainer {
+  .feedbackContainerContact {
     display: flex;
     width: 100%;
     height: 450px;
     position: relative; 
     }
    
-  .formAreaContainer {
+  .formAreaContainerContact {
     width: 55%;
+    height: 670px;
     position: relative;
     margin-top: -220px;
     z-index: 3;
     
-    
-    form {
+    .formContact{
       width: 100%;
-      height: 600px;  
+      height: 600px; 
       box-shadow: 20px 20px $greenishCyan;
       background-color: $iceBlue;
       padding: 50px;
@@ -36,7 +36,7 @@ html.contact {
       align-items: center;
     } 
   
-    form input::placeholder, textarea{
+    .formContact input::placeholder, textarea, input{
       font-family: $lato;
       font-size: 2rem;
       font-weight: light;
@@ -44,7 +44,7 @@ html.contact {
       letter-spacing: 0.2rem;
     }
   
-    .upperFormInput {
+    .upperFormInputContact {
       display: flex;
       justify-content: space-evenly;
       width: 100%;
@@ -143,12 +143,21 @@ html.contact {
         }
       }
   }
-
   .addressLine {
     font-family: $lato;
     font-size: 2rem;
     font-weight: light;
     line-height: 3.2rem;
     letter-spacing: 0.2rem;
+  }
+
+  .submitted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    height: 100%;
+    font-size: 2.2rem;
   }
 }

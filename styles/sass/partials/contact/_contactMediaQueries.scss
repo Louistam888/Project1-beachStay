@@ -21,24 +21,25 @@
       display: inline-flex;
     }
 
-    .feedbackContainer {
+    .feedbackContainerContact {
       flex-direction: column;
       height: auto;      
     }
 
-    .formAreaContainer {
+    .formAreaContainerContact {
       width: 100%;
-      border: 2px solid $greenishCyan;
+      
       margin-top: 50px;
 
-      form {
+      .formContact {
         top: 0;
         left: 0;
         position: relative;
+        border: 2px solid $greenishCyan;
       }
     }
 
-    .upperFormInput {
+    .upperFormInputContact {
       display: flex;
       flex-direction: column;
       gap: 0px;
@@ -71,6 +72,11 @@
     .socialMediaBar {
       justify-content: center;
     }
+
+    .submitted {
+      width: 100%;
+      padding-top: 100px;
+    }
   }
 }
 
@@ -86,11 +92,11 @@
       text-align: center;
     }
 
-    form {
+    .formContact {
       font-size: 1.8rem; 
     }
 
-    form input::placeholder, textarea {
+    .formContact input::placeholder, textarea {
       font-size: 1.8rem; 
     }
 
@@ -108,16 +114,17 @@
       font-size: 4.2rem;
     }
 
-    .formAreaContainer {
+    .formAreaContainerContact {
       border: none;
   
-      form {
+      .formContact {
         box-shadow: none;
-        padding: 10px;
+        padding: 10px; 
+        border: none;
       }
     }
 
-    form input::placeholder, textarea {
+    .formContact input::placeholder, textarea {
       font-size: 1.7rem; 
     }
   }

@@ -104,7 +104,6 @@
 
       h5 {
         text-align: center;
-        margin-bottom: 10px;
       }
     }
   }
@@ -170,17 +169,8 @@
       font-size: 2.8rem;
     }
 
-    .commentDate {
-      line-height: 2.5rem;
-    }
-
-    .commenterPhoto {
-      width: 70px;
-    }
-  
-    .userComment {
-      width: 85%;
-      padding-left: 50px;
+    .commentDate, .commentName{
+      line-height: 2rem;
     }
   }
 }
@@ -210,19 +200,17 @@
       font-size: 1.7rem; 
     }
 
-    .commentDate {
+    .commentDate, .commentName {
        padding: 0 20px;
     }
 
-    .commenterPhoto {
-      width: 25%;
-      padding: 0;
-      margin: 0;
+    .commentDate {
+      margin-bottom: 0;
     }
-  
+
     .userComment {
-      width: 75%;
-      padding-left: 10px;
+      padding: 0 20px;
+    
     }
   }
 }

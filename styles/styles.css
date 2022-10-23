@@ -329,8 +329,8 @@ h1 a:focus {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  *-webkit-transition: all 0.3s ease-in-out;
-  *transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #FAFFFE;
 }
 
@@ -498,13 +498,11 @@ html.index h2 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   padding-left: 20%;
   color: #0C5F4C;
 }
-html.index h3 {
+html.index .h2Span {
   font-size: 11.12rem;
   font-family: "PlayfairDisplaySC";
   font-weight: italic;
@@ -517,10 +515,9 @@ html.index h3 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  padding-left: 20%;
   margin: 30px 0;
 }
-html.index h4 {
+html.index h3 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 3.5rem;
@@ -528,7 +525,7 @@ html.index h4 {
   letter-spacing: 0.38rem;
   color: #0C5F4C;
 }
-html.index h5 {
+html.index h4 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 3rem;
@@ -536,7 +533,7 @@ html.index h5 {
   letter-spacing: 0.32rem;
   color: #0C5F4C;
 }
-html.index h6 {
+html.index h5 {
   font-family: "Lato";
   font-weight: bold;
   font-size: 3.5rem;
@@ -642,10 +639,10 @@ html.index .photoHover:focus {
   font-weight: bold;
   color: white;
 }
-html.index h5 {
+html.index h4 {
   position: relative;
 }
-html.index h5::before {
+html.index h4::before {
   font-family: "Font Awesome 5 Free";
   font-size: 2.5rem;
   position: absolute;
@@ -689,16 +686,16 @@ html.index .about ul li {
   padding-right: 15px;
   padding-left: 80px;
 }
-html.index .about ul li:nth-child(1) h5::before {
+html.index .about ul li:nth-child(1) h4::before {
   content: "\e3af";
 }
-html.index .about ul li:nth-child(2) h5::before {
+html.index .about ul li:nth-child(2) h4::before {
   content: "\e533";
 }
-html.index .about ul li:nth-child(3) h5::before {
+html.index .about ul li:nth-child(3) h4::before {
   content: "\f15b";
 }
-html.index .about ul li:nth-child(4) h5::before {
+html.index .about ul li:nth-child(4) h4::before {
   content: "\f879";
 }
 html.index .locations {
@@ -882,7 +879,7 @@ html.contact .heroTextContainer2 {
 html.contact h2 {
   line-height: 4rem;
 }
-html.contact .feedbackContainer {
+html.contact .feedbackContainerContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,13 +887,14 @@ html.contact .feedbackContainer {
   height: 450px;
   position: relative;
 }
-html.contact .formAreaContainer {
+html.contact .formAreaContainerContact {
   width: 55%;
+  height: 670px;
   position: relative;
   margin-top: -220px;
   z-index: 3;
 }
-html.contact .formAreaContainer form {
+html.contact .formAreaContainerContact .formContact {
   width: 100%;
   height: 600px;
   -webkit-box-shadow: 20px 20px #50E3C2;
@@ -917,42 +915,42 @@ html.contact .formAreaContainer form {
       -ms-flex-align: center;
           align-items: center;
 }
-html.contact .formAreaContainer form input::-webkit-input-placeholder {
+html.contact .formAreaContainerContact .formContact input::-webkit-input-placeholder {
   font-family: "Lato";
   font-size: 2rem;
   font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.contact .formAreaContainer form input::-moz-placeholder {
+html.contact .formAreaContainerContact .formContact input::-moz-placeholder {
   font-family: "Lato";
   font-size: 2rem;
   font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.contact .formAreaContainer form input:-ms-input-placeholder {
+html.contact .formAreaContainerContact .formContact input:-ms-input-placeholder {
   font-family: "Lato";
   font-size: 2rem;
   font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.contact .formAreaContainer form input::-ms-input-placeholder {
+html.contact .formAreaContainerContact .formContact input::-ms-input-placeholder {
   font-family: "Lato";
   font-size: 2rem;
   font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.contact .formAreaContainer form input::placeholder, html.contact .formAreaContainer textarea {
+html.contact .formAreaContainerContact .formContact input::placeholder, html.contact .formAreaContainerContact textarea, html.contact .formAreaContainerContact input {
   font-family: "Lato";
   font-size: 2rem;
   font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.contact .formAreaContainer .upperFormInput {
+html.contact .formAreaContainerContact .upperFormInputContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,16 +960,16 @@ html.contact .formAreaContainer .upperFormInput {
   width: 100%;
   gap: 30px;
 }
-html.contact .formAreaContainer .upperFormInput li {
+html.contact .formAreaContainerContact .upperFormInputContact li {
   width: 100%;
 }
-html.contact .formAreaContainer .upperFormInput input {
+html.contact .formAreaContainerContact .upperFormInputContact input {
   width: 100%;
   border: none;
   border-bottom: 2px solid #50E3C2;
   padding: 10px;
 }
-html.contact .formAreaContainer .contactTextArea {
+html.contact .formAreaContainerContact .contactTextArea {
   width: 100%;
   height: 100%;
   border: 2px solid #50E3C2;
@@ -979,7 +977,7 @@ html.contact .formAreaContainer .contactTextArea {
   resize: none;
   padding: 10px;
 }
-html.contact .formAreaContainer .linkBox {
+html.contact .formAreaContainerContact .linkBox {
   width: 100%;
 }
 html.contact .addressContainer {
@@ -1063,6 +1061,21 @@ html.contact .addressLine {
   font-weight: light;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
+}
+html.contact .submitted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 55%;
+  height: 100%;
+  font-size: 2.2rem;
 }
 
 /**********************/
@@ -1255,25 +1268,73 @@ html.blog .commentContainer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-html.blog .commentPost {
+html.blog .commentDate, html.blog .commentName {
+  font-weight: bold;
+  line-height: 2rem;
+}
+html.blog .commentName {
+  color: #0C5F4C;
+  margin-bottom: 0.5rem;
+}
+html.blog .commentDate {
+  color: #063974;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+html.blog .commentsPosted {
+  width: 100%;
+  margin-top: 20px;
+}
+html.blog .commentsPosted li {
+  margin-bottom: 35px;
+}
+html.blog .accordionItemHeader {
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: #0C5F4C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 25px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-html.blog .commentDate {
-  font-weight: bold;
-  color: #063974;
-  line-height: 2rem;
-  margin-bottom: 1.5rem;
+html.blog .accordionItemHeader h5 {
+  color: #FAFFFE;
 }
-html.blog .commenterPhoto {
-  width: 15%;
+html.blog .accordionItemHeader::after, html.blog .accordionItemHeader.active::after {
+  font-size: 3.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  color: #FAFFFE;
 }
-html.blog .userComment {
-  width: 85%;
-  padding-left: 50px;
+html.blog .accordionItemHeader::after {
+  content: "▼";
+}
+html.blog .accordionItemHeader.active::after {
+  content: "▲";
+}
+html.blog .accordionContent {
+  padding: 10px;
+}
+html.blog .accordionItemBody {
+  max-height: 0;
+  overflow: hidden;
+  border: 1px #0C5F4C solid;
+  padding: 0;
 }
 html.blog .formAreaContainer {
   width: 100%;
@@ -1326,7 +1387,7 @@ html.blog .formAreaContainer form input::-ms-input-placeholder {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-html.blog .formAreaContainer form input::placeholder, html.blog .formAreaContainer textarea {
+html.blog .formAreaContainer form input::placeholder, html.blog .formAreaContainer textarea, html.blog .formAreaContainer input {
   font-family: "Lato";
   font-size: 2rem;
   font-weight: light;
@@ -1378,6 +1439,9 @@ html.blog .linkBox {
   text-align: center;
   z-index: 3;
   cursor: pointer;
+  text-decoration: none;
+  color: #FAFFFE;
+  letter-spacing: 0.2rem;
 }
 .linkBox:hover {
   background-color: #0C5F4C;
@@ -1430,7 +1494,7 @@ footer p {
   }
 }
 @media (max-width: 1250px) {
-  html.index h3 {
+  html.index .h2Span {
     font-size: 9rem;
   }
   html.index .freeTrip {
@@ -1459,11 +1523,12 @@ footer p {
   html.index header {
     margin-bottom: 50px;
   }
-  html.index h2, html.index h3 {
+  html.index h2, html.index .h2Span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 0;
+    text-align: center;
+    padding: 15px 10px;
   }
   html.index .heroTextContainer {
     padding: 0;
@@ -1515,16 +1580,16 @@ footer p {
     font-size: 3rem;
     line-height: 3rem;
   }
-  html.index h3 {
+  html.index .h2Span {
     font-size: 6rem;
     margin: 0;
   }
-  html.index h4 {
+  html.index h3 {
     font-size: 3rem;
     line-height: 4rem;
     padding-bottom: 20px;
   }
-  html.index h5 {
+  html.index h4 {
     font-size: 3rem;
   }
   html.index .gallery ul {
@@ -1601,10 +1666,10 @@ footer p {
     font-size: 2.5rem;
     line-height: 1.8rem;
   }
-  html.index h3 {
+  html.index .h2Span {
     font-size: 3.8rem;
   }
-  html.index h4, html.index h5 {
+  html.index h3, html.index h4 {
     font-size: 2.8rem;
     text-align: center;
   }
@@ -1614,7 +1679,7 @@ footer p {
   html.index .gallery ul li {
     height: 100%;
   }
-  html.index li h5::before {
+  html.index li h4::before {
     display: none;
   }
   html.index .about {
@@ -1649,24 +1714,24 @@ footer p {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  html.contact .feedbackContainer {
+  html.contact .feedbackContainerContact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
   }
-  html.contact .formAreaContainer {
+  html.contact .formAreaContainerContact {
     width: 100%;
-    border: 2px solid #50E3C2;
     margin-top: 50px;
   }
-  html.contact .formAreaContainer form {
+  html.contact .formAreaContainerContact .formContact {
     top: 0;
     left: 0;
     position: relative;
+    border: 2px solid #50E3C2;
   }
-  html.contact .upperFormInput {
+  html.contact .upperFormInputContact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1676,7 +1741,7 @@ footer p {
             flex-direction: column;
     gap: 0px;
   }
-  html.contact .upperFormInput li {
+  html.contact .upperFormInputContact li {
     width: 100%;
     font-size: 1.8rem;
   }
@@ -1715,6 +1780,10 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  html.contact .submitted {
+    width: 100%;
+    padding-top: 100px;
+  }
 }
 @media (max-width: 800px) {
   html.contact h2 {
@@ -1724,22 +1793,22 @@ footer p {
     line-height: 3.5rem;
     text-align: center;
   }
-  html.contact form {
+  html.contact .formContact {
     font-size: 1.8rem;
   }
-  html.contact form input::-webkit-input-placeholder {
+  html.contact .formContact input::-webkit-input-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input::-moz-placeholder {
+  html.contact .formContact input::-moz-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input:-ms-input-placeholder {
+  html.contact .formContact input:-ms-input-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input::-ms-input-placeholder {
+  html.contact .formContact input::-ms-input-placeholder {
     font-size: 1.8rem;
   }
-  html.contact form input::placeholder, html.contact textarea {
+  html.contact .formContact input::placeholder, html.contact textarea {
     font-size: 1.8rem;
   }
   html.contact .addressFirstLine {
@@ -1750,27 +1819,28 @@ footer p {
   html.contact h2 {
     font-size: 4.2rem;
   }
-  html.contact .formAreaContainer {
+  html.contact .formAreaContainerContact {
     border: none;
   }
-  html.contact .formAreaContainer form {
+  html.contact .formAreaContainerContact .formContact {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 10px;
+    border: none;
   }
-  html.contact form input::-webkit-input-placeholder {
+  html.contact .formContact input::-webkit-input-placeholder {
     font-size: 1.7rem;
   }
-  html.contact form input::-moz-placeholder {
+  html.contact .formContact input::-moz-placeholder {
     font-size: 1.7rem;
   }
-  html.contact form input:-ms-input-placeholder {
+  html.contact .formContact input:-ms-input-placeholder {
     font-size: 1.7rem;
   }
-  html.contact form input::-ms-input-placeholder {
+  html.contact .formContact input::-ms-input-placeholder {
     font-size: 1.7rem;
   }
-  html.contact form input::placeholder, html.contact textarea {
+  html.contact .formContact input::placeholder, html.contact textarea {
     font-size: 1.7rem;
   }
 }
@@ -1877,7 +1947,6 @@ footer p {
   }
   html.blog .commentContainer h5 {
     text-align: center;
-    margin-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -1954,15 +2023,8 @@ footer p {
   html.blog .addressFirstLine {
     font-size: 2.8rem;
   }
-  html.blog .commentDate {
-    line-height: 2.5rem;
-  }
-  html.blog .commenterPhoto {
-    width: 70px;
-  }
-  html.blog .userComment {
-    width: 85%;
-    padding-left: 50px;
+  html.blog .commentDate, html.blog .commentName {
+    line-height: 2rem;
   }
 }
 @media (max-width: 480px) {
@@ -1995,17 +2057,14 @@ footer p {
   html.blog form input::placeholder, html.blog textarea {
     font-size: 1.7rem;
   }
-  html.blog .commentDate {
+  html.blog .commentDate, html.blog .commentName {
     padding: 0 20px;
   }
-  html.blog .commenterPhoto {
-    width: 25%;
-    padding: 0;
-    margin: 0;
+  html.blog .commentDate {
+    margin-bottom: 0;
   }
   html.blog .userComment {
-    width: 75%;
-    padding-left: 10px;
+    padding: 0 20px;
   }
 }
 /****************************************/
